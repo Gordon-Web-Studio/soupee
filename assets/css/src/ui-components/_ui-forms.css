@@ -1,0 +1,128 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.ui-field,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select,
+.ui-select {
+	margin: 0;
+	padding: 0 0.75rem;
+	width: 100%;
+	height: var(--element-height);
+	font-size: 16px;
+	line-height: 2.5;
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--color-theme-gray-light);
+	border-radius: var(--rounded-radius);
+	outline: none;
+	background-color: var(--color-theme-white);
+	background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+	color: var(--color-theme-gray);
+	box-shadow: none;
+	vertical-align: baseline;
+	transition: all 0.3s;
+}
+
+select,
+.ui-select {
+	--ui-form-bg-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E),
+		var(--ui-form-bg-image);
+	padding-right: 1.5rem;
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.7em top 50%, 0 0;
+	background-size: 0.65em auto, 100%;
+
+	& option {
+		color: var(--ui-form-color);
+		padding: 5px 0;
+		font-weight: 400;
+	}
+}
+
+.ui-field:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+input[type="range"]:hover,
+input[type="date"]:hover,
+input[type="month"]:hover,
+input[type="week"]:hover,
+input[type="time"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="color"]:hover,
+textarea:hover,
+select:hover,
+.ui-select:hover {
+	border-color: var(--color-theme-primary);
+}
+
+.ui-field:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus,
+select:focus,
+.ui-select:focus {
+	border-color: var(--color-theme-primary);
+	color: var(--color-theme-primary);
+}
+
+.is_disabled,
+.ui-field:disabled,
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="url"]:disabled,
+input[type="password"]:disabled,
+input[type="search"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="range"]:disabled,
+input[type="date"]:disabled,
+input[type="month"]:disabled,
+input[type="week"]:disabled,
+input[type="time"]:disabled,
+input[type="datetime"]:disabled,
+input[type="datetime-local"]:disabled,
+input[type="color"]:disabled,
+textarea:disabled,
+select:disabled,
+.ui-select:disabled,
+[readonly] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}

@@ -1,0 +1,13 @@
+@import "../_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Block: Hero
+--------------------------------------------------------------*/
+.block-hero {
+	text-align: left;
+	align-items: flex-end;
+
+	&:not(.has-background) {
+		background-color: var(--color-theme-gray-light);
+	}
+}

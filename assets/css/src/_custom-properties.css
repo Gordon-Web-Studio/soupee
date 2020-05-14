@@ -1,0 +1,186 @@
+/**
+ * Custom Properties
+ * aka CSS variables.
+ *
+ * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ **/
+
+:root {
+	--global-font-color: #ffffff;
+	--global-background-color: #1c1c2a;
+	--global-font-family: "Poppins", sans-serif;
+	--global-font-size: 1rem;
+	--global-font-line-height: 1.2;
+	--highlight-font-family: "Russo One", sans-serif;
+	--content-width: 1200px;
+	--element-height: 3rem;
+	--dropdown-symbol-width: 0.7em;
+
+	/* Custom editor colors */
+	--color-theme-primary: #00d7c8;
+	--color-theme-primary-light: #73f3ea;
+	--color-theme-primary-dark: #00a79b;
+	--color-theme-secondary: #1c1c2a;
+	--color-theme-secondary-light: #3e3e55;
+	--color-theme-secondary-dark: #14141d;
+	--color-theme-red: #c0392b;
+	--color-theme-green: #27ae60;
+	--color-theme-blue: #2980b9;
+	--color-theme-yellow: #f1c40f;
+	--color-theme-black: #1c2833;
+	--color-theme-white: #fff;
+	--color-theme-light: #f8f8f8;
+	--color-theme-gray: #9e9e9e;
+	--color-theme-gray-light: #e9e9e9;
+	--color-theme-gray-dark: #545454;
+
+	/* Link colors */
+	--color-link: var(--color-theme-primary);
+	--color-link-hover: var(--color-theme-primary-dark);
+	--color-link-visited: var(--color-theme-primary-dark);
+
+	/* Quote colors */
+	--color-quote-border: #000;
+	--color-quote-citation: #7d7d8f;
+
+	/* Custom editor font sizes */
+	--font-size-small: calc(var(--global-font-size) * 0.707);
+	--font-size-regular: calc(var(--global-font-size) * 1);
+	--font-size-large: calc(var(--global-font-size) * 2.827);
+	--font-size-larger: calc(var(--global-font-size) * 3.998);
+
+	/* Font Sizes */
+	--fs1: calc(var(--global-font-size) * 5.653);
+	--fs2: calc(var(--global-font-size) * 3.998);
+	--fs3: calc(var(--global-font-size) * 2.827);
+	--fs4: calc(var(--global-font-size) * 1.999);
+	--fs5: calc(var(--global-font-size) * 1.414);
+	--fs6: calc(var(--global-font-size) * 1);
+	--fs7: calc(var(--global-font-size) * 0.707);
+	--fs8: calc(var(--global-font-size) * 0.65);
+
+
+	/*letter spacing*/
+	--letter-spacing-0: none;
+	--letter-spacing-h1: 0.176rem;
+	--letter-spacing-h2: 0.053rem;
+	--letter-spacing-h3: 1.73px;
+	--letter-spacing-h4: 0.86px;
+	--letter-spacing-h5: 1.29px;
+	--letter-spacing-sh: 5.72px;
+	--letter-spacing-lead: 1.29px;
+	--letter-spacing-p: 1.1px;
+	--letter-spacing-small: 2.76px;
+
+	/*font-weight*/
+	--fw-thin: 200;
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+
+	/* Borders. */
+	--border-size: 1px;
+	--rounded-radius: 4px;
+	--pill-radius: 25px;
+	--circle-radius: 50%;
+
+	/* Transitions. */
+	--transition: all 0.5s ease-in-out;
+
+	/* Spacing. */
+	--spacer: 1rem;
+	--spacer-0: 0;
+	--spacer-1: calc(var(--spacer) * 0.25);
+	--spacer-2: calc(var(--spacer) * 0.5);
+	--spacer-3: var(--spacer);
+	--spacer-4: calc(var(--spacer) * 1.5);
+	--spacer-5: calc(var(--spacer) * 2);
+	--spacer-6: calc(var(--spacer) * 3);
+
+	/* Font icons */
+	--font-awesome-free: "Font Awesome 5 Free";
+	--font-awesome-brand: "Font Awesome 5 Brand";
+	--font-icon: var(--font-awesome-free);
+
+	/* Icons */
+	--icon-play: "\f04b";
+	--icon-pause: "\f04c";
+	--icon-mute: "\f6a9";
+	--icon-volume-down: "\f027";
+	--icon-volume-up: "\f028";
+	--icon-forward: "\f04e";
+	--icon-backward: "\f04a";
+	--icon-home: "\ea12";
+	--icon-user: "\ea05";
+	--icon-search: "\ea09";
+	--icon-search-alt: "\ea0d";
+	--icon-gear: "\ea03";
+	--icon-link: "\ea04";
+	--icon-dashboard: "\ea0b";
+	--icon-award: "\ea0c";
+	--icon-bell: "\ea0e";
+	--icon-bookmark: "\ea0f";
+	--icon-calendar: "\ea10";
+	--icon-envelope: "\ea11";
+	--icon-hand-coin: "\ea11";
+	--icon-eye: "\ea14";
+	--icon-star: "\ea15";
+	--icon-team: "\ea16";
+	--icon-setting: "\ea17";
+	--icon-edit: "\ea18";
+	--icon-send: "\ea43";
+	--icon-send-alt: "\ea19";
+	--icon-support: "\ea1a";
+	--icon-download: "\ea1b";
+	--icon-upload: "\ea1c";
+	--icon-vector: "\ea1d";
+	--icon-trash: "\ea1e";
+	--icon-wallet: "\ea1f";
+	--icon-share: "\ea20";
+	--icon-chart: "\ea21";
+	--icon-camera: "\ea22";
+	--icon-group-add: "\ea23";
+	--icon-people-outline: "\ea24";
+	--icon-person-outline: "\ea25";
+	--icon-person-add: "\ea26";
+	--icon-priority-high: "\ea28";
+	--icon-crop: "\ea29";
+	--icon-radio-unchecked: "\f111";
+	--icon-radio-checked: "\f192";
+	--icon-checkbox-unchecked: "\f0c8";
+	--icon-checkbox-null: "\f146";
+	--icon-checkbox-checked: "\f14a";
+	--icon-zoomout: "\ea2f";
+	--icon-local-atm: "\ea30";
+	--icon-headset: "\ea31";
+	--icon-check: "\ea32";
+	--icon-close: "\f00d";
+	--icon-arrow-up: "\ea34";
+	--icon-arrow-down: "\ea3a";
+	--icon-arrow-left: "\ea3b";
+	--icon-arrow-right: "\ea35";
+	--icon-chevron-up: "\ea38";
+	--icon-chevron-down: "\ea36";
+	--icon-chevron-left: "\ea39";
+	--icon-chevron-right: "\ea37";
+	--icon-star-circle: "\ea3c";
+	--icon-shopping-cart: "\ea3d";
+	--icon-schedule: "\ea3e";
+	--icon-power: "\ea3f";
+	--icon-credit-card: "\ea40";
+	--icon-list: "\ea41";
+	--icon-launch: "\ea42";
+	--icon-priority-circle: "\ea44";
+	--icon-check-circle: "\ea45";
+	--icon-thumb-up: "\ea4a";
+	--icon-thumb-down: "\ea4b";
+	--icon-add-circle: "\ea4f";
+	--icon-add-circle-solid: "\ea50";
+	--icon-add: "\f067";
+	--icon-minus: "\f068";
+	--icon-remove-circle: "\ea4c";
+	--icon-remove-circle-solid: "\ea4d";
+	--icon-plus-circle: "\f055";
+	--icon-minus-circle: "\f056";
+}

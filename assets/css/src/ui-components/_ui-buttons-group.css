@@ -1,0 +1,50 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Buttons Group
+--------------------------------------------------------------*/
+.ui-btn-group {
+	position: relative;
+	display: inline-flex;
+	vertical-align: middle;
+
+	& > .ui-btn {
+		position: relative;
+		flex: 0 1 auto;
+	}
+
+	& > .ui-btn:hover,
+	& > .ui-btn:focus,
+	& > .ui-btn:active {
+		z-index: 1;
+	}
+
+	& .ui-btn + .ui-btn,
+	& .ui-btn + .ui-btn-group,
+	& .ui-btn-group + .ui-btn,
+	& .ui-btn-group + .ui-btn-group {
+		margin-left: calc(-1 * var(--border-size));
+	}
+
+	& > .ui-btn:first-child {
+		margin-left: 0;
+	}
+
+	&.btn-toggle input[type="radio"],
+	&.btn-toggle input[type="checkbox"] {
+		position: absolute;
+		right: 9000px;
+	}
+
+	& > .ui-btn:not(:first-child),
+	& > .ui-btn-group:not(:first-child) > .ui-btn {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	& > .ui-btn:not(:last-child):not(.dropdown-toggle),
+	& > .ui-btn-group:not(:last-child) > .ui-btn {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}

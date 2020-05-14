@@ -1,0 +1,129 @@
+@import "../_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Block: Slideshow
+--------------------------------------------------------------*/
+.block-slideshow {
+	padding-top: 0;
+	padding-bottom: 0;
+	align-items: center;
+
+	&:not(.has-background) {
+		background-color: var(--color-theme-gray-light);
+	}
+
+	& .slideshow-container {
+		position: relative;
+	}
+
+	& .slideshow-container,
+	& .slide {
+		width: 100%;
+		height: 100vh;
+	}
+
+	& .slide {
+		position: relative;
+		display: inline-flex;
+		text-align: left;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
+		&.has-video-foreground .video-foreground.is_active {
+			position: absolute;
+		}
+
+		&.has-video-foreground .video-foreground.is_active .modal-video-overlay {
+			position: absolute;
+		}
+
+		@media (--breakpoint-query) {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		@media (--breakpoint-query) {
+
+			& .fluid-container {
+				max-width: calc(100% - 10rem);
+			}
+		}
+	}
+
+	& .slideshow-thumbs {
+		position: absolute;
+		bottom: 40px;
+		right: 0;
+		display: block;
+		width: 90%;
+		height: 150px;
+		padding: 15px 10px;
+		border-radius: var(--rounded-radius);
+		background-color: rgba(0, 0, 0, 0.25);
+		overflow: hidden;
+
+		@media (--breakpoint-max-query) {
+			height: 110px;
+		}
+	}
+
+	& .slideshow-thumbs-container {
+		width: 110%;
+	}
+
+	& .slide-thumb-wrapper {
+		display: inline-flex;
+		width: 100%;
+		min-width: 280px;
+		height: 120px;
+		padding: 0 5px;
+		justify-content: space-between;
+
+		@media (--breakpoint-max-query) {
+			min-width: 80px;
+			height: 80px;
+		}
+	}
+
+	& .slide-thumb-media {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40%;
+		height: 100%;
+		border-radius: var(--rounded-radius);
+		overflow: hidden;
+
+		@media (--breakpoint-max-query) {
+			width: 100%;
+		}
+	}
+
+	& .slide-thumb-content {
+		width: 60%;
+		padding: 15px;
+
+		@media (--breakpoint-max-query) {
+			display: none;
+		}
+	}
+}
+
+.has-thumbnails {
+
+	& .slide {
+		padding-bottom: 14rem;
+	}
+
+	& .arrows {
+		top: calc(90% - 7rem);
+
+		@media (--breakpoint-query) {
+			top: calc(50% - 7rem);
+		}
+	}
+}

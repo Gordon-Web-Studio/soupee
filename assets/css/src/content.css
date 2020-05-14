@@ -1,0 +1,352 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Imports
+	# Blocks
+	# Media
+		# Captions
+		# Galleries (Legacy)
+# Post and page content
+	# Alignments
+	# Custom block colors
+	# Custom font sizes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+@import "_blocks.css";
+@import "_media.css";
+
+/*--------------------------------------------------------------
+# Post and page content
+--------------------------------------------------------------*/
+
+/* Custom rule  for sticky posts:
+.sticky {
+
+}
+*/
+
+.entry {
+	margin-bottom: 3rem;
+}
+
+.entry-meta,
+.entry-footer {
+	font-family: var(--highlight-font-family);
+	font-stretch: condensed;
+	font-size: 80%;
+}
+
+.entry-meta {
+	margin: 1em 0;
+}
+
+/* Hides the update date and time. */
+.updated:not(.published) {
+	display: none;
+}
+
+.post-thumbnail img {
+	margin: 0 auto;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.page-content > *,
+.entry-content > *,
+.entry-summary > * {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	max-width: var(--content-width);
+}
+
+.page-header,
+.entry-header,
+.entry-footer,
+.site-info,
+.post-navigation,
+.page-navigation,
+.comments-area {
+	margin: 0.5em auto;
+	padding-right: 0;
+	padding-left: 0;
+	max-width: var(--content-width);
+}
+
+@media (--breakpoint-query) {
+
+	.page-content > *,
+	.entry-content > *,
+	.entry-summary > *,
+	.page-header,
+	.entry-header,
+	.entry-footer,
+	.site-info,
+	.post-navigation,
+	.page-navigation,
+	.comments-area {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.entry-content ul,
+.entry-content ol {
+	padding-right: 2.5em;
+	padding-left: 2.5em;
+}
+
+.entry-content ul ul,
+.entry-content ol ol {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
+/* Align .more-link with the content. */
+.entry-content > .more-link {
+	display: block;
+}
+
+.page-links {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.entry-footer span {
+	margin-right: 1em;
+}
+
+.entry-footer {
+	clear: both;
+	padding: 1.5em 1.5rem 3em;
+	border-bottom: 1px solid #111;
+}
+
+@media (--breakpoint-query) {
+
+	.entry-footer {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+## Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	float: left;
+	margin-right: 1.5rem;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1.5rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide {
+	max-width: calc(50% + var(--content-width) / 2);
+}
+
+.alignfull {
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*--------------------------------------------------------------
+## Custom block colors.
+--------------------------------------------------------------*/
+
+.has-theme-primary-color,
+.has-theme-primary-color a {
+	color: var(--color-theme-primary);
+}
+
+.has-theme-primary-background-color {
+	background-color: var(--color-theme-primary);
+}
+
+.has-theme-primary-light-color,
+.has-theme-primary-light-color a {
+	color: var(--color-theme-primary-light);
+}
+
+.has-theme-primary-light-background-color {
+	background-color: var(--color-theme-primary-light);
+}
+
+.has-theme-secondary-color,
+.has-theme-secondary-color a {
+	color: var(--color-theme-secondary);
+}
+
+.has-theme-secondary-background-color {
+	background-color: var(--color-theme-secondary);
+}
+
+.has-theme-secondary-light-color,
+.has-theme-secondary-light-color a {
+	color: var(--color-theme-secondary-light);
+}
+
+.has-theme-secondary-light-background-color {
+	background-color: var(--color-theme-secondary-light);
+}
+
+.has-theme-red-color,
+.has-theme-red-color a {
+	color: var(--color-theme-red);
+}
+
+.has-theme-red-background-color {
+	background-color: var(--color-theme-red);
+}
+
+.has-theme-green-color,
+.has-theme-green-color a {
+	color: var(--color-theme-green);
+}
+
+.has-theme-green-background-color {
+	background-color: var(--color-theme-green);
+}
+
+.has-theme-blue-color,
+.has-theme-blue-color a {
+	color: var(--color-theme-blue);
+}
+
+.has-theme-blue-background-color {
+	background-color: var(--color-theme-blue);
+}
+
+.has-theme-yellow-color,
+.has-theme-yellow-color a {
+	color: var(--color-theme-yellow);
+}
+
+.has-theme-yellow-background-color {
+	background-color: var(--color-theme-yellow);
+}
+
+.has-theme-black-color,
+.has-theme-black-color a {
+	color: var(--color-theme-black);
+}
+
+.has-theme-black-background-color {
+	background-color: var(--color-theme-black);
+}
+
+.has-theme-gray-dark-color,
+.has-theme-gray-dark-color a {
+	color: var(--color-theme-gray-dark);
+}
+
+.has-theme-gray-dark-background-color {
+	background-color: var(--color-theme-gray-dark);
+}
+
+.has-theme-gray-color,
+.has-theme-gray-color a {
+	color: var(--color-theme-gray);
+}
+
+.has-theme-gray-background-color {
+	background-color: var(--color-theme-gray);
+}
+
+.has-theme-gray-light-color,
+.has-theme-gray-light-color a {
+	color: var(--color-theme-gray-light);
+}
+
+.has-theme-gray-light-background-color {
+	background-color: var(--color-theme-gray-light);
+}
+
+.has-theme-light-color,
+.has-theme-light-color a {
+	color: var(--color-theme-light);
+}
+
+.has-theme-light-background-color {
+	background-color: var(--color-theme-light);
+}
+
+.has-theme-white-color,
+.has-theme-white-color a {
+	color: var(--color-theme-white);
+}
+
+.has-theme-white-background-color {
+	background-color: var(--color-theme-white);
+}
+
+/*--------------------------------------------------------------
+## Custom block font sizes.
+--------------------------------------------------------------*/
+
+.has-small-font-size {
+	font-size: var(--font-size-small);
+}
+
+.has-regular-font-size {
+	font-size: var(--font-size-regular);
+}
+
+.has-large-font-size {
+	font-size: var(--font-size-large);
+}
+
+.has-larger-font-size {
+	font-size: var(--font-size-larger);
+}
+
+/*--------------------------------------------------------------
+## Festival Post Type.
+--------------------------------------------------------------*/
+.festival-logo-right {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: inline-block;
+}
+
+.festival-logo-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+}
+
+.acf-map {
+	width: 100%;
+	height: 400px;
+	border: 1px solid var(--color-theme-secondary);
+	margin: 20px 0;
+}
+
+/* Fixes potential theme css conflict. */
+.acf-map img {
+	max-width: inherit !important;
+}

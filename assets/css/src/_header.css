@@ -1,0 +1,103 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	position: relative;
+	width: 100%;
+	color: var(--color-theme-white);
+	z-index: 1;
+
+	& div,
+	& button {
+		color: currentColor;
+	}
+
+	&.header-alt {
+		position: fixed;
+		background-color: transparent;
+		color: var(--color-theme-secondary-dark);
+
+		& .icon-bar {
+			background-color: var(--color-theme-secondary-dark);
+		}
+	}
+}
+
+.custom-logo-link {
+	display: block;
+	margin: 1em auto 1em;
+	width: 200px;
+}
+
+.custom-logo {
+	height: 38px;
+
+	@media (--breakpoint-query) {
+		height: 68px;
+	}
+}
+
+.site-branding {
+	text-align: center;
+}
+
+.ui-menu-toggle {
+	position: relative;
+	display: block;
+	padding: 0.25rem 0.5rem;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid transparent;
+	outline: 0;
+	font-size: 1.25rem;
+
+	& .icon-bar {
+		display: block;
+		width: 40px;
+		height: 4px;
+		border-radius: 3px;
+		transform: none;
+		background-color: currentColor;
+		transition: all 0.5s ease-in-out;
+
+		@media (--breakpoint-max-query) {
+			width: 33px;
+		}
+
+		& + .icon-bar {
+			margin-top: 8px;
+		}
+
+		&:first-child {
+			width: 30px;
+		}
+
+		&:last-child {
+			width: 25px;
+		}
+	}
+
+	&.is_open .icon-bar {
+
+		&:first-child {
+			width: 14px;
+		}
+
+		&:last-child {
+			width: 10px;
+		}
+
+		@media (--breakpoint-query) {
+
+			&:first-child {
+				width: 28px;
+			}
+
+			&:last-child {
+				width: 15px;
+			}
+		}
+	}
+}

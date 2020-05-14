@@ -1,0 +1,731 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Clearfix */
+.clearfix::before,
+.clearfix::after {
+	display: table;
+	content: " ";
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+/* Grouping elements and follow childs height */
+* html .group {
+	height: 1%;
+}
+
+* + html .group {
+	display: inline-block;
+}
+
+.group::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Aligning elements Left - Right. */
+img.align-left,
+img.align-right {
+	display: inline;
+}
+
+.align-left {
+	float: left;
+	margin-right: 10px;
+}
+
+.align-right {
+	float: right;
+	margin-left: 10px;
+}
+
+/* Text, Background and Border utility colors. */
+/* stylelint-disable */
+@each $color in primary, primary-light, secondary, secondary-light, red, green,
+	blue, yellow, black, gray-dark, gray, gray-light, light, white {
+	.text-$(color) {
+		color: var(--color-theme-$(color));
+	}
+
+	.bg-$(color) {
+		background-color: var(--color-theme-$(color));
+	}
+
+	.border-$(color) {
+		border-color: var(--color-theme-$(color));
+	}
+}
+/* stylelint-enable */
+
+.border-0 {
+	border: none;
+}
+
+.border-1 {
+	border-width: 1px;
+}
+
+.border-2 {
+	border-width: 2px;
+}
+
+.border-0,
+.border-1,
+.border-2 {
+	border-style: solid;
+}
+
+/* Border radius */
+.rounded-radius {
+	border-radius: var(--rounded-radius);
+}
+
+.pill-radius {
+	border-radius: var(--pill-radius);
+}
+
+.circle-radius {
+	border-radius: var(--circle-radius);
+}
+
+.none-radius {
+	border-radius: none;
+}
+
+/* Remove background color. */
+.bg-transparent {
+	background-color: transparent;
+}
+
+/* Add Box Shadow */
+.box-shadow {
+	box-shadow: 0 9px 17px -6px rgba(var(--color-theme-black), 0.25);
+}
+
+/* Remove box-shadow. */
+.box-shadow-0 {
+	box-shadow: none;
+}
+
+/* Opacity. */
+.opacity-0 {
+	opacity: 0;
+}
+
+.opacity-25 {
+	opacity: 0.25;
+}
+
+.opacity-50 {
+	opacity: 0.5;
+}
+
+.opacity-75 {
+	opacity: 0.75;
+}
+
+.opacity-100 {
+	opacity: 1;
+}
+
+/* Text aligment helpers. */
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+@media (--breakpoint-max-query) {
+
+	.sm-text-left {
+		text-align: left;
+	}
+
+	.sm-text-center {
+		text-align: center;
+	}
+
+	.sm-text-right {
+		text-align: right;
+	}
+}
+
+/* Text transforms */
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+/* Text weigth */
+
+.text-lighter,
+.text-100 {
+	font-weight: 100;
+}
+
+.text-200 {
+	font-weight: 200;
+}
+
+.text-300 {
+	font-weight: 300;
+}
+
+.text-normal,
+.text-400 {
+	font-weight: 400;
+}
+
+.text-500 {
+	font-weight: 500;
+}
+
+.text-600 {
+	font-weight: 600;
+}
+
+.text-700 {
+	font-weight: 700;
+}
+
+.text-800 {
+	font-weight: 800;
+}
+
+.text-bolder,
+.text-900 {
+	font-weight: 900;
+}
+
+/* Text family */
+.text-default {
+	font-family: var(--global-font-family);
+}
+
+.text-heading {
+	font-family: var(--highlight-font-family);
+}
+
+/* Text shadow */
+.text-shadow {
+	text-shadow: 0 2px 4px rgba(var(--color-theme-black), 0.5);
+}
+
+/* Text spacing. */
+.letter-space-0 {
+	letter-spacing: 0;
+}
+
+.letter-space {
+	letter-spacing: 0.5px;
+}
+
+.letter-space-1 {
+	letter-spacing: 1px;
+}
+
+.letter-space-2 {
+	letter-spacing: 2px;
+}
+
+.letter-space-3 {
+	letter-spacing: 3px;
+}
+
+.letter-space-4 {
+	letter-spacing: 4px;
+}
+
+/* Text wrapping */
+.no-wrap {
+	white-space: nowrap;
+}
+
+/* For containers. */
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.flex {
+	display: flex;
+}
+
+/* For containers for mobile. */
+@media (--breakpoint-max-query) {
+
+	.sm-block {
+		display: block;
+	}
+
+	.sm-inline-block {
+		display: inline-block;
+	}
+
+	.sm-inline {
+		display: inline;
+	}
+
+	.sm-flex {
+		display: flex;
+	}
+}
+
+/* Positions */
+.position-relative {
+	position: relative;
+}
+
+.position-absolute {
+	position: absolute;
+}
+
+.position-static {
+	position: static;
+}
+
+/* Hide blocks. */
+.hide {
+	display: none;
+}
+
+@media (--breakpoint-max-query) {
+
+	.sm-hide {
+		display: none;
+	}
+}
+
+@media (--breakpoint-query) {
+
+	.md-hide {
+		display: none;
+	}
+}
+
+@media (--desktop-query) {
+
+	.lg-hide {
+		display: none;
+	}
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.overflow-initial {
+	overflow: initial;
+}
+
+.overflow-y {
+	overflow-y: auto;
+}
+
+.overflow-x {
+	overflow-x: auto;
+}
+
+/* Change flex direction. */
+.flex-column {
+	flex-direction: column;
+}
+
+.content-start {
+	justify-content: flex-start;
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.content-end {
+	justify-content: flex-end;
+}
+
+.content-between {
+	justify-content: space-between;
+}
+
+.content-around {
+	justify-content: space-around;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+/* For items inside containers. */
+.item-grow {
+	flex-grow: 1;
+}
+
+.item-start {
+	align-self: flex-start;
+}
+
+.item-center {
+	align-self: center;
+}
+
+.item-end {
+	align-self: flex-end;
+}
+
+/* Flex shortcodes */
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Centering elements with horizontal margins. */
+.box-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered-xy {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Spacing.
+* It will generate several classes such as:
+* .mr-1 which gives margin-right 0.25rem.
+* .mt-2 gives MARGIN to the TOP 0.5rem.
+* .my-3 gives MARGIN to the TOP and BOTTOM of 1rem.
+* .pb-5 gives PADDING to the BOTTOM 3rem.
+* .pl-4 gives PADDING to the LEFT of 1.5rem.
+* .px-3 gives PADDING to the LEFT and RIGHT of 1rem.
+* The first letter is "m" or "p" for MARGIN or PADDING
+* Second letter is "t", "b", "l", "r", "y" or "x"
+* for TOP, BOTTOM, LEFT, RIGHT, TOPBOTTOM or LEFTRIGHT */
+/* stylelint-disable */
+@each $key, $size in (0, 1, 2, 3, 4, 5, 6),
+	(0, 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem, 3rem) {
+	.m-$(key) {
+		margin: $(size);
+	}
+
+	.p-$(key) {
+		padding: $(size);
+	}
+
+	.my-$(key) {
+		margin-top: $(size);
+		margin-bottom: $(size);
+	}
+
+	.py-$(key) {
+		padding-top: $(size);
+		padding-bottom: $(size);
+	}
+
+	.mx-$(key) {
+		margin-left: $(size);
+		margin-right: $(size);
+	}
+
+	.px-$(key) {
+		padding-left: $(size);
+		padding-right: $(size);
+	}
+
+	.mt-$(key) {
+		margin-top: $(size);
+	}
+
+	.pt-$(key) {
+		padding-top: $(size);
+	}
+
+	.mb-$(key) {
+		margin-bottom: $(size);
+	}
+
+	.pb-$(key) {
+		padding-bottom: $(size);
+	}
+
+	.ml-$(key) {
+		margin-left: $(size);
+	}
+
+	.pl-$(key) {
+		padding-left: $(size);
+	}
+
+	.mr-$(key) {
+		margin-right: $(size);
+	}
+
+	.pr-$(key) {
+		padding-right: $(size);
+	}
+}
+/* stylelint-enable */
+
+/* Sections */
+.section {
+	width: 100%;
+	padding-top: var(--spacer);
+	padding-bottom: var(--spacer);
+}
+
+/* Dividers */
+.divider {
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background-color: var(--color-theme-gray-light);
+	border: 0;
+}
+
+/* Fixed width sizes */
+.w-24 {
+	width: 24px;
+}
+
+.w-32 {
+	width: 32px;
+}
+
+.w-64 {
+	width: 64px;
+}
+
+.w-80 {
+	width: 80px;
+}
+
+.w-100 {
+	width: 100px;
+}
+
+.w-120 {
+	width: 120px;
+}
+
+.w-140 {
+	width: 140px;
+}
+
+.w-160 {
+	width: 160px;
+}
+
+.w-180 {
+	width: 180px;
+}
+
+.w-200 {
+	width: 200px;
+}
+
+.w-220 {
+	width: 220px;
+}
+
+.w-240 {
+	width: 240px;
+}
+
+.w-260 {
+	width: 260px;
+}
+
+.w-280 {
+	width: 280px;
+}
+
+.w-300 {
+	width: 300px;
+}
+
+.w-480 {
+	width: 480px;
+}
+
+.w-640 {
+	width: 640px;
+}
+
+/* Fixed width sizes mobile. */
+
+@media (--breakpoint-max-query) {
+
+	.sm-w-24 {
+		width: 24px;
+	}
+
+	.sm-w-32 {
+		width: 32px;
+	}
+
+	.sm-w-64 {
+		width: 64px;
+	}
+
+	.sm-w-80 {
+		width: 80px;
+	}
+
+	.sm-w-100 {
+		width: 100px;
+	}
+
+	.sm-w-120 {
+		width: 120px;
+	}
+
+	.sm-w-140 {
+		width: 140px;
+	}
+
+	.sm-w-160 {
+		width: 160px;
+	}
+
+	.sm-w-180 {
+		width: 180px;
+	}
+
+	.sm-w-200 {
+		width: 200px;
+	}
+
+	.sm-w-220 {
+		width: 220px;
+	}
+
+	.sm-w-240 {
+		width: 240px;
+	}
+
+	.sm-w-260 {
+		width: 260px;
+	}
+
+	.sm-w-280 {
+		width: 280px;
+	}
+
+	.sm-w-300 {
+		width: 300px;
+	}
+
+	.sm-w-480 {
+		width: 480px;
+	}
+
+	.sm-w-640 {
+		width: 640px;
+	}
+}
+
+/* Height Sizes */
+.full-height {
+	height: 100vh;
+}
+
+.half-height {
+	height: 50vh;
+}
+
+/* Icons Sizes */
+.icon-24 {
+	width: 24px;
+	height: 24px;
+}
+
+.icon-32 {
+	width: 32px;
+	height: 32px;
+}
+
+.icon-64 {
+	width: 64px;
+	height: 64px;
+}
+
+.icon-80 {
+	width: 80px;
+	height: 80px;
+}
+
+.icon-100 {
+	width: 100px;
+	height: 100px;
+}
+
+.icon-120 {
+	width: 120px;
+	height: 120px;
+}
+
+.icon-160 {
+	width: 160px;
+	height: 160px;
+}
+
+.icon-180 {
+	width: 180px;
+	height: 180px;
+}
+
+.icon-200 {
+	width: 200px;
+	height: 200px;
+}
+
+.icon-250 {
+	width: 250px;
+	height: 250px;
+}
+
+.icon-300 {
+	width: 300px;
+	height: 300px;
+}

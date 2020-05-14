@@ -1,0 +1,131 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* stylelint-disable */
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+/* stylelint-enable */
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Inherit box-sizing to make it easier to change the property for
+ * components that leverage other behavior; see
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/* stylelint-disable */
+body {
+	color: var(--global-font-color);
+	background: var(--global-background-color);
+
+	/* Fallback for when there is no custom background color defined. */
+}
+/* stylelint-enable */
+
+/* stylelint-disable */
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+/* stylelint-enable */
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+code:not([class*="language-"]) {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #b69eeb;
+	background-color: #4e2c8c;
+	border-radius: 4px;
+}
+
+th {
+	font-weight: 700;
+}
+
+th,
+td,
+caption {
+	padding: 4px 10px 4px 5px;
+}
+
+tfoot {
+	font-style: italic;
+}
+
+.separator-vertical {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 1px;
+	height: 100px;
+	background-color: var(--color-theme-gray-light);
+}
+
+/* stylelint-disable */
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+/* stylelint-enable */
+
+/* Extra wide images within figure tags don't overflow the content area. */
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+a > *,
+button > *,
+.button > * {
+	pointer-events: none;
+}

@@ -1,0 +1,41 @@
+@import "_custom-properties.css";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.ui-media {
+	display: table;
+	width: 100%;
+}
+
+.media-image,
+.media-content {
+	display: table-cell;
+	vertical-align: middle;
+
+	@nest .media-top & {
+		vertical-align: top;
+	}
+
+	@nest .media-bottom & {
+		vertical-align: bottom;
+	}
+}
+
+.media-image {
+	padding-right: var(--spacer);
+
+	& > img {
+		display: block;
+		max-width: none;
+	}
+
+	@nest .media-rev & {
+		padding-right: 0;
+		padding-left: var(--spacer);
+	}
+}
+
+.media-content {
+	width: 100%;
+}

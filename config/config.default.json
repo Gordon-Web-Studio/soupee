@@ -1,0 +1,37 @@
+{
+  "theme": {
+    "slug": "soupee-theme",
+    "name": "Soupee Custom Theme",
+    "author": "Gordon Web Studio"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "server": "./",
+      "proxyURL": "localhost",
+      "bypassPort": "8888",
+      "https": false
+    },
+    "styles": {
+      "stage": 3,
+      "autoprefixer": {
+        "grid": false
+      },
+      "importFrom": ["_custom-media.css", "_mixins.css"],
+      "features": {
+        "custom-media-queries": true,
+        "custom-properties": true,
+        "nesting-rules": true
+      }
+    },
+    "debug": {
+      "styles": true,
+      "scripts": false
+    }
+  },
+  "export": {
+    "compress": true,
+    "generatePotFile": true,
+    "filesToCopy": ["LICENSE", "readme.txt", "screenshot.png"]
+  }
+}

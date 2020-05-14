@@ -9,7 +9,7 @@
       "live": true,
       "server": "./",
       "proxyURL": "localhost",
-      "bypassPort": "8888",
+      "bypassPort": "8000",
       "https": false
     },
     "styles": {

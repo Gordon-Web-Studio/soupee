@@ -12,9 +12,9 @@ import { serve } from './gulp/browserSync';
 import scripts from './gulp/scripts';
 import styles from './gulp/styles';
 import watch from './gulp/watch';
-// import prodPrep from './gulp/prodPrep';
-// import prodStringReplace from './gulp/prodStringReplace';
-// import prodCompress from './gulp/prodCompress';
+import prodPrep from './gulp/prodPrep';
+import prodStringReplace from './gulp/prodStringReplace';
+import prodCompress from './gulp/prodCompress';
 import { cleanCSS, cleanJS } from './gulp/clean';
 
 /**
@@ -32,6 +32,14 @@ export default firstRun;
 export const buildDev = parallel(
     html, images, styles, scripts
 );
+
+/**
+ * Export theme for distribution.
+ */
+export const bundleTheme = series(
+    prodPrep, parallel(html, scripts, styles, images), prodCompress,
+);
+
 
 /**
  * Export all imported functions as tasks

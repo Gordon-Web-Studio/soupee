@@ -29,7 +29,7 @@ export const isProd = ( process.env.NODE_ENV === 'production' );
 const config = getThemeConfig();
 
 // directory for the production theme
-export const prodThemePath = path.normalize( `${ rootPath }/../${ config.theme.slug }` );
+export const prodThemePath = path.normalize( `${ rootPath }/${ config.theme.slug }` );
 
 // directory for assets (CSS, JS, images)
 export const assetsDir = `${ rootPath }/assets`;
@@ -53,9 +53,9 @@ const paths = {
 	assetsDir,
 	browserSync: {
 		dir: `${ rootPath }/BrowserSync`,
-		cert: `${ rootPath }/BrowserSync/wp-rig-browser-sync-cert.crt`,
-		caCert: `${ rootPath }/BrowserSync/wp-rig-browser-sync-root-cert.crt`,
-		key: `${ rootPath }/BrowserSync/wp-rig-browser-sync-key.key`,
+		// cert: `${ rootPath }/BrowserSync/wp-rig-browser-sync-cert.crt`,
+		// caCert: `${ rootPath }/BrowserSync/wp-rig-browser-sync-root-cert.crt`,
+		// key: `${ rootPath }/BrowserSync/wp-rig-browser-sync-key.key`,
 	},
 	config: {
 		themeConfig: `${ rootPath }/config/themeConfig.js`,
@@ -92,7 +92,7 @@ const paths = {
 	export: {
 		src: [],
 		stringReplaceSrc: [
-			`${ rootPath }/style.css`,
+			// `${ rootPath }/style.css`,
 			// `${ rootPath }/languages/*.po`,
 		],
 	},
@@ -108,7 +108,7 @@ for ( const filePath of filesToCopy.concat( additionalFilesToCopy ) ) {
 
 // Override paths for production
 if ( isProd ) {
-	paths.php.dest = `${ prodThemePath }/`;
+	paths.html.dest = `${ prodThemePath }/`;
 	paths.styles.dest = `${ prodAssetsDir }/css/`;
 	paths.scripts.dest = `${ prodAssetsDir }/js/`;
 	paths.images.dest = `${ prodAssetsDir }/images/`;

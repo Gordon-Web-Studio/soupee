@@ -32,7 +32,7 @@
 	padding-left: 0;
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.children {
 		margin-left: 2em;
@@ -116,7 +116,7 @@
 	margin-left: 0;
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.comment-content ul,
 	.comment-content ol {

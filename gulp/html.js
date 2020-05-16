@@ -20,10 +20,10 @@ import { paths, isProd } from './constants';
  */
 export default function html( done ) {
 	return pump( [
-        src( paths.html.src )
-        .pipe(htmlPartial({
-            basePath:  paths.html.partials
-        })),
-        dest( paths.html.dest )
-    ], done );
+		src( paths.html.src )
+			.pipe( htmlPartial( {
+				basePath: paths.html.partials,
+			} ) ),
+		dest( paths.html.dest ),
+	], done );
 }

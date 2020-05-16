@@ -41,7 +41,7 @@ object {
 	margin: 0.8075em 0;
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.wp-caption.alignright,
 	.wp-block-image.alignright {

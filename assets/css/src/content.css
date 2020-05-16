@@ -81,7 +81,7 @@
 	max-width: var(--content-width);
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.page-content > *,
 	.entry-content > *,
@@ -132,7 +132,7 @@
 	border-bottom: 1px solid #111;
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.entry-footer {
 		padding-right: 0;

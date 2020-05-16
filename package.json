@@ -1,7 +1,7 @@
 {
   "name": "soupee",
   "version": "0.0.1",
-  "description": "A progressive theme development for plain html.",
+  "description": "Frontend Framework with Modern CSS",
   "author": "Gordon Web Studio",
   "license": "MIT",
   "main": "index.html",

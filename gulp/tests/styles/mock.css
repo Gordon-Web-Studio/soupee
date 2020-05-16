@@ -10,7 +10,7 @@
 	display: grid;
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.entry {
 		padding: 0;

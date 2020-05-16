@@ -48,6 +48,11 @@ img.align-right {
 	margin-left: 10px;
 }
 
+@media (--sm-max) {
+
+}
+
+
 /* Text, Background and Border utility colors. */
 /* stylelint-disable */
 @each $color in primary, primary-light, secondary, secondary-light, red, green,
@@ -150,7 +155,7 @@ img.align-right {
 	text-align: right;
 }
 
-@media (--breakpoint-max-query) {
+@media (--sm-max) {
 
 	.sm-text-left {
 		text-align: left;
@@ -281,7 +286,7 @@ img.align-right {
 }
 
 /* For containers for mobile. */
-@media (--breakpoint-max-query) {
+@media (--sm-max) {
 
 	.sm-block {
 		display: block;
@@ -318,21 +323,21 @@ img.align-right {
 	display: none;
 }
 
-@media (--breakpoint-max-query) {
+@media (--sm-max) {
 
 	.sm-hide {
 		display: none;
 	}
 }
 
-@media (--breakpoint-query) {
+@media (--sm) {
 
 	.md-hide {
 		display: none;
 	}
 }
 
-@media (--desktop-query) {
+@media (--lg) {
 
 	.lg-hide {
 		display: none;
@@ -594,7 +599,7 @@ img.align-right {
 
 /* Fixed width sizes mobile. */
 
-@media (--breakpoint-max-query) {
+@media (--sm-max) {
 
 	.sm-w-24 {
 		width: 24px;

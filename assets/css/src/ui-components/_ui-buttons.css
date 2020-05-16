@@ -68,7 +68,7 @@
 	}
 }
 
-@media (--mobile-query) {
+@media (--xs) {
 
 	.block-buttons {
 		width: auto;
@@ -196,7 +196,7 @@
 	font-size: 16px;
 	height: auto;
 
-	@media (--breakpoint-query) {
+	@media (--sm) {
 		padding: 25px 80px;
 		height: 70px;
 	}
@@ -224,14 +224,14 @@
 
 .btn-block-sm {
 
-	@media (--breakpoint-max-query) {
+	@media (--sm-max) {
 		width: 100%;
 	}
 }
 
 .btn-block-lg {
 
-	@media (--breakpoint-query) {
+	@media (--sm) {
 		width: 100%;
 	}
 }

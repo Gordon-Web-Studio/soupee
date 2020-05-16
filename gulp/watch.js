@@ -29,7 +29,7 @@ export default function watch() {
 	gulpWatch( backslashToForwardSlash( paths.html.src ), series( html, reload ) );
 
 	gulpWatch( backslashToForwardSlash( paths.html.partials ), series( html, reload ) );
-	
+
 	gulpWatch( backslashToForwardSlash( paths.styles.src[ 0 ] ), styles );
 
 	gulpWatch( backslashToForwardSlash( paths.scripts.src[ 0 ] ), series( scripts, reload ) );

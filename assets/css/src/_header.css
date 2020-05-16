@@ -34,7 +34,7 @@
 .custom-logo {
 	height: 38px;
 
-	@media (--breakpoint-query) {
+	@media (--sm) {
 		height: 68px;
 	}
 }
@@ -62,7 +62,7 @@
 		background-color: currentColor;
 		transition: all 0.5s ease-in-out;
 
-		@media (--breakpoint-max-query) {
+		@media (--sm-max) {
 			width: 33px;
 		}
 
@@ -89,7 +89,7 @@
 			width: 10px;
 		}
 
-		@media (--breakpoint-query) {
+		@media (--sm) {
 
 			&:first-child {
 				width: 28px;

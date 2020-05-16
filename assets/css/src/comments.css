@@ -47,7 +47,7 @@
 .comment-meta {
 	position: relative;
 	margin-left: 70px;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
 }
@@ -144,7 +144,7 @@
 .comment-form .form-submit input {
 	display: inline-block;
 	padding: 0.5em 1.4em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 	font-size: 85%;
 	color: #000;
@@ -170,7 +170,7 @@
 
 .comment-notes {
 	margin-top: -1em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 	font-size: 0.9em;
 	font-style: italic;
@@ -187,7 +187,7 @@
 	width: 13em;
 	display: block;
 	font-size: 0.9em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 	padding-bottom: 0.4em;
 }

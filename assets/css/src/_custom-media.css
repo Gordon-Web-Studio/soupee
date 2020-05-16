@@ -5,12 +5,11 @@
  * @link: https://drafts.csswg.org/mediaqueries-5/#custom-mq
  **/
 
-@custom-media --xs screen and (min-width: 580px);
-@custom-media --xs-max screen and (max-width: 580px);
-@custom-media --sm screen and (min-width: 768px);
-@custom-media --sm-max screen and (max-width: 768px);
-@custom-media --md screen and (min-width: 1024px);
-@custom-media --md-max screen and (max-width: 1024px);
+/* Range of breakpoints. */
+@custom-media --sm screen and (min-width: 580px);
+@custom-media --sm-max screen and (max-width: 580px);
+@custom-media --md screen and (min-width: 992px);
+@custom-media --md-max screen and (max-width: 992px);
 @custom-media --lg screen and (min-width: 1200px);
 @custom-media --lg-max screen and (max-width: 1200px);
 @custom-media --xl screen and (min-width: 1600px);

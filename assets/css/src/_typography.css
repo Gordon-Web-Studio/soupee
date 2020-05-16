@@ -27,7 +27,7 @@ h6,
 .sup-h1,
 .sup-h2,
 .sup-h3 {
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 
 	/* color: var(--color-theme-primary); */
 	clear: both;

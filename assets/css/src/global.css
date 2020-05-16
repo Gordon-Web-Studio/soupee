@@ -88,7 +88,7 @@
 	display: block;
 	margin: 1.2em auto;
 	padding: 0.6em 1.2em 0.5em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
 	text-transform: uppercase;
@@ -224,7 +224,7 @@
 	margin: 0 auto;
 	padding: 0;
 	max-width: var(--content-width);
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 }
 
@@ -323,7 +323,7 @@
 	max-width: var(--content-width);
 	overflow: hidden;
 	padding: 0 1.5rem 2em;
-	font-family: var(--highlight-font-family);
+	font-family: var(--heading-font-family);
 	font-stretch: condensed;
 }
 

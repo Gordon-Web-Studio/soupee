@@ -14,7 +14,7 @@
 	width: 100%;
 }
 
-@media (--sm) {
+@media (--md) {
 
 	.fluid-container {
 		max-width: calc(100% - 4rem);
@@ -115,62 +115,62 @@
 }
 
 /* Grid columns for each breakpoint. */
-@each $size in xs, sm, md, lg, xl {
-	@media (--$(size)) {
-		.$(size)-full {
-			width: 100%;
-		}
-		
-		.$(size)-half {
-			width: 50%;
-		}
-		
-		.$(size)-one-third {
-			width: 33.33%;
-		}
-		
-		.$(size)-two-third {
-			width: 66.66%;
-		}
-		
-		.$(size)-one-fourth {
-			width: 25%;
-		}
-		
-		.$(size)-two-fourth {
-			width: 50%;
-		}
-		
-		.$(size)-three-fourth {
-			width: 75%;
-		}
-		
-		.$(size)-one-fifth {
-			width: 20%;
-		}
-		
-		.$(size)-two-fifth {
-			width: 40%;
-		}
-		
-		.$(size)-three-fifth {
-			width: 60%;
-		}
-		
-		.$(size)-four-fifth {
-			width: 80%;
-		}
-		
-		.$(size)-seven-twelfths {
-			width: 58.33%;
-		}
-		
-		.$(size)-five-twelfths {
-			width: 41.66%;
-		}
-		
-		.$(size)-nine-tenth {
-			width: 90%;
-		}
+@each $size in sm, md, lg, xl {
+@media (--$(size)) {
+	.$(size)-full {
+		width: 100%;
 	}
+	
+	.$(size)-half {
+		width: 50%;
+	}
+	
+	.$(size)-one-third {
+		width: 33.33%;
+	}
+	
+	.$(size)-two-third {
+		width: 66.66%;
+	}
+	
+	.$(size)-one-fourth {
+		width: 25%;
+	}
+	
+	.$(size)-two-fourth {
+		width: 50%;
+	}
+	
+	.$(size)-three-fourth {
+		width: 75%;
+	}
+	
+	.$(size)-one-fifth {
+		width: 20%;
+	}
+	
+	.$(size)-two-fifth {
+		width: 40%;
+	}
+	
+	.$(size)-three-fifth {
+		width: 60%;
+	}
+	
+	.$(size)-four-fifth {
+		width: 80%;
+	}
+	
+	.$(size)-seven-twelfths {
+		width: 58.33%;
+	}
+	
+	.$(size)-five-twelfths {
+		width: 41.66%;
+	}
+	
+	.$(size)-nine-tenth {
+		width: 90%;
+	}
+}
 }

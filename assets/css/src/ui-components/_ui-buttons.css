@@ -68,7 +68,7 @@
 	}
 }
 
-@media (--xs) {
+@media (--sm) {
 
 	.block-buttons {
 		width: auto;

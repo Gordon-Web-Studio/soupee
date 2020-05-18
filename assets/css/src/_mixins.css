@@ -1,4 +1,3 @@
-@import "_custom-properties.css";
 
 /* stylelint-disable */
 @define-mixin aspect-ratio-landscape $width: 16, $height: 9 {

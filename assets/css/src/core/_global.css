@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Global styles
+--------------------------------------------------------------*/
+[class~="m-"] > *:last-child {
+	margin: 0;
+}
+
+.blockquote {
+	margin: 0 1.5em 1.5em 1.5em;
+	padding: 10px 20px;
+	font-size: 1.25rem;
+	font-weight: 400;
+	border-left: 5px solid var(--color-gray-light);
+
+	& p {
+		margin-bottom: 0.5rem;
+	}
+
+	& small {
+		color: var(--color-gray-dark);
+	}
+}
+
+
+.list {
+	list-style: none;
+	padding-left: 0;
+
+	& ul {
+		padding-left: 1rem;
+		list-style: none;
+	}
+}
+
+.list-inline {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: -5px;
+	padding-left: 0;
+
+	& > li {
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}
+
+.separator-vertical {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 1px;
+	height: 100px;
+	background-color: var(--color-gray-light);
+}

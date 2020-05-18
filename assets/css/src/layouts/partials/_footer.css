@@ -1,0 +1,11 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+	font-family: var(--global-font-family);
+	font-stretch: condensed;
+}
+
+.site-info {
+	text-align: center;
+}

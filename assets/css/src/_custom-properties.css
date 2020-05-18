@@ -47,10 +47,10 @@
 	--fs-small: clamp(0.875rem, 1.825vw, 1rem);
 	--fs-regular: clamp(1rem, 2.1vw, 1.2rem);
 	--fs-large: clamp(1.6rem, 3.35vw, 2.25rem);
-	--fs-larger: calc(var(--global-font-size) * 3.998);
+	--fs-larger: clamp(2rem, 4.25vw, 3.25rem);
 
 	/* Font Sizes */
-	--fs1: clamp(2rem, 4.25vw, 3.25rem);
+	--fs1: var(--fs-larger);
 	--fs2: clamp(1.8rem, 3.75vw, 3rem);
 	--fs3: var(--fs-large);
 	--fs4: clamp(1.4rem, 2.925vw, 1.875rem);

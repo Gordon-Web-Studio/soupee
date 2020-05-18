@@ -1,4 +1,3 @@
-@import "_custom-properties.css";
 
 /*--------------------------------------------------------------
 # Grid
@@ -9,8 +8,8 @@
 .inner-container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: var(--spacer);
-	padding-right: var(--spacer);
+	padding-left: var(--spacer-5);
+	padding-right: var(--spacer-5);
 	width: 100%;
 }
 
@@ -66,39 +65,39 @@
 	width: 50%;
 }
 
-.one-third {
+.one-thirds {
 	width: 33.33%;
 }
 
-.two-third {
+.two-thirds {
 	width: 66.66%;
 }
 
-.one-fourth {
+.one-quarters {
 	width: 25%;
 }
 
-.two-fourth {
+.two-quarters {
 	width: 50%;
 }
 
-.three-fourth {
+.three-quarters {
 	width: 75%;
 }
 
-.one-fifth {
+.one-fifths {
 	width: 20%;
 }
 
-.two-fifth {
+.two-fifths {
 	width: 40%;
 }
 
-.three-fifth {
+.three-fifths {
 	width: 60%;
 }
 
-.four-fifth {
+.four-fifths {
 	width: 80%;
 }
 
@@ -110,66 +109,74 @@
 	width: 41.66%;
 }
 
-.nine-tenth {
+.one-tenths {
+	width: 10%;
+}
+
+.nine-tenths {
 	width: 90%;
 }
 
 /* Grid columns for each breakpoint. */
 @each $size in sm, md, lg, xl {
 @media (--$(size)) {
-	.$(size)-full {
+	.full-$(size) {
 		width: 100%;
 	}
 	
-	.$(size)-half {
+	.half-$(size) {
 		width: 50%;
 	}
 	
-	.$(size)-one-third {
+	.one-thirds-$(size) {
 		width: 33.33%;
 	}
 	
-	.$(size)-two-third {
+	.two-thirds-$(size) {
 		width: 66.66%;
 	}
 	
-	.$(size)-one-fourth {
+	.one-quarters-$(size) {
 		width: 25%;
 	}
 	
-	.$(size)-two-fourth {
+	.two-quarters-$(size) {
 		width: 50%;
 	}
 	
-	.$(size)-three-fourth {
+	.three-quarters-$(size) {
 		width: 75%;
 	}
 	
-	.$(size)-one-fifth {
+	.one-fifths-$(size) {
 		width: 20%;
 	}
 	
-	.$(size)-two-fifth {
+	.two-fifths-$(size) {
 		width: 40%;
 	}
 	
-	.$(size)-three-fifth {
+	.three-fifths-$(size) {
 		width: 60%;
 	}
 	
-	.$(size)-four-fifth {
+	.four-fifths-$(size) {
 		width: 80%;
 	}
 	
-	.$(size)-seven-twelfths {
+	.seven-twelfths-$(size) {
 		width: 58.33%;
 	}
 	
-	.$(size)-five-twelfths {
+	.five-twelfths-$(size) {
 		width: 41.66%;
 	}
 	
-	.$(size)-nine-tenth {
+	.one-tenths-$(size) {
+		width: 10%;
+	}
+
+	.nine-tenths-$(size) {
 		width: 90%;
 	}
 }

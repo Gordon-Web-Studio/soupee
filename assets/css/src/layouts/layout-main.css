@@ -1,0 +1,54 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Header
+# Footer
+# Navigation
+# Main Layout
+--------------------------------------------------------------*/
+
+@import "partials/_header.css";
+@import "partials/_footer.css";
+@import "partials/_navigation.css";
+@import "extras/_blocks.css";
+
+/*--------------------------------------------------------------
+# Main Layout
+--------------------------------------------------------------*/
+.site {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.site-main {
+	min-height: 700px;
+}
+
+@media (--sidebar) {
+
+	.has-sidebar .site {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-gap: 2rem;
+		justify-content: center;
+	}
+
+	.site-header {
+		grid-column: span 2;
+	}
+
+	.site-main {
+		grid-column: 1;
+		min-width: 0;
+	}
+
+	.primary-sidebar {
+		grid-column: 2;
+		min-width: 0;
+	}
+
+	.site-footer {
+		grid-column: span 2;
+	}
+}

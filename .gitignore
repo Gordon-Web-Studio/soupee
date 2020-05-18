@@ -11,6 +11,8 @@
 !/assets/js/
 /assets/js/*
 !/assets/js/src/
+/assets/html/*
+!/assets/html/src/
 !/assets/images/
 /assets/images/*
 !/assets/images/src/

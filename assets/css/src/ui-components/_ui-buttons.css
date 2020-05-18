@@ -99,8 +99,8 @@
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.is_active {
-	border-color: var(--color-primary-dark);
-	background: var(--color-primary-dark);
+	border-color: var(--color-primary-light);
+	background: var(--color-primary-light);
 	color: var(--color-secondary);
 }
 
@@ -147,9 +147,9 @@
 .btn-outline-primary:focus,
 .btn-outline-primary:active,
 .btn-outline-primary.is_active {
-	border-color: var(--color-primary-dark);
-	background: var(--color-primary-dark);
-	color: var(--color-white);
+	border-color: var(--color-primary-light);
+	background: var(--color-primary-light);
+	color: var(--color-secondary);
 }
 
 .btn-outline-secondary,

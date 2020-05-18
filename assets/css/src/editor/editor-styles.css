@@ -55,7 +55,7 @@ option {
 .editor-writing-flow {
 	color: var(--global-font-color);
 	font-family: var(--global-font-family);
-	font-size: var(--font-size-regular);
+	font-size: var(--fs-regular);
 	line-height: var(--global-font-line-height);
 }
 

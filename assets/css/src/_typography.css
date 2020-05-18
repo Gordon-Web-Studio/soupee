@@ -3,14 +3,13 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/* stylelint-disable */
 .site {
 	color: var(--global-font-color);
 	font-family: var(--global-font-family);
-	font-size: var(--font-size-regular);
+	font-size: var(--fs-regular);
 	line-height: var(--global-font-line-height);
 }
-/* stylelint-enable */
+
 
 h1,
 h2,
@@ -29,7 +28,7 @@ h6,
 .sup-h3 {
 	font-family: var(--heading-font-family);
 
-	/* color: var(--color-theme-primary); */
+	/* color: var(--color-primary); */
 	clear: both;
 }
 
@@ -80,24 +79,11 @@ small,
 .h7,
 .fs7 {
 	font-size: var(--fs7);
-	letter-spacing: var(--letter-spacing-small);
-	text-transform: uppercase;
 }
 
 .h8,
 .fs8 {
 	font-size: var(--fs8);
-}
-
-.subheading {
-	font-size: var(--fs5);
-	letter-spacing: var(--letter-spacing-sh);
-	text-transform: uppercase;
-}
-
-.p {
-	font-size: var(--fs7);
-	letter-spacing: var(--letter-spacing-p);
 }
 
 .h5,
@@ -113,37 +99,24 @@ small,
 
 /* special headings for mastheads and banners. */
 .sup-h1 {
-	font-size: calc(var(--global-font-size) * 2.5);
-
-	@media (--sm) {
-		font-size: calc(var(--global-font-size) * 3.75);
-	}
+	font-size: clamp(2rem, 4.25vw, 5rem);
 }
 
 .sup-h2 {
-	font-size: calc(var(--global-font-size) * 2);
-
-	@media (--sm) {
-		font-size: calc(var(--global-font-size) * 2.7);
-	}
+	font-size: clamp(1.8rem, 3.75vw, 4.25rem);
 }
 
 .sup-h3 {
-	font-size: calc(var(--global-font-size) * 1.75);
-
-	@media (--sm) {
-		font-size: calc(var(--global-font-size) * 3.25);
-	}
+	font-size: clamp(1.6rem, 3.35vw, 3.75rem);
 }
 
-#page .is-text-inverted {
-	color: var(--color-theme-secondary-dark);
+.site .is-text-inverted {
+	color: var(--color-secondary-dark);
 }
 
 .entry-header h1.entry-title,
 .page-header .page-title {
-	font-size: 2.827rem;
-	line-height: 1.4;
+	font-size: var(--fs-large);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
@@ -191,8 +164,8 @@ address {
 
 /* stylelint-disable */
 pre {
-	background: #eee;
-	color: #000;
+	background: #eeeeee;
+	color: var(--color-black);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 0.9375rem;
 	line-height: 1.6;

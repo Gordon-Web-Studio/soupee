@@ -176,128 +176,128 @@
 
 .has-theme-primary-color,
 .has-theme-primary-color a {
-	color: var(--color-theme-primary);
+	color: var(--color-primary);
 }
 
 .has-theme-primary-background-color {
-	background-color: var(--color-theme-primary);
+	background-color: var(--color-primary);
 }
 
 .has-theme-primary-light-color,
 .has-theme-primary-light-color a {
-	color: var(--color-theme-primary-light);
+	color: var(--color-primary-light);
 }
 
 .has-theme-primary-light-background-color {
-	background-color: var(--color-theme-primary-light);
+	background-color: var(--color-primary-light);
 }
 
 .has-theme-secondary-color,
 .has-theme-secondary-color a {
-	color: var(--color-theme-secondary);
+	color: var(--color-secondary);
 }
 
 .has-theme-secondary-background-color {
-	background-color: var(--color-theme-secondary);
+	background-color: var(--color-secondary);
 }
 
 .has-theme-secondary-light-color,
 .has-theme-secondary-light-color a {
-	color: var(--color-theme-secondary-light);
+	color: var(--color-secondary-light);
 }
 
 .has-theme-secondary-light-background-color {
-	background-color: var(--color-theme-secondary-light);
+	background-color: var(--color-secondary-light);
 }
 
 .has-theme-red-color,
 .has-theme-red-color a {
-	color: var(--color-theme-red);
+	color: var(--color-red);
 }
 
 .has-theme-red-background-color {
-	background-color: var(--color-theme-red);
+	background-color: var(--color-red);
 }
 
 .has-theme-green-color,
 .has-theme-green-color a {
-	color: var(--color-theme-green);
+	color: var(--color-green);
 }
 
 .has-theme-green-background-color {
-	background-color: var(--color-theme-green);
+	background-color: var(--color-green);
 }
 
 .has-theme-blue-color,
 .has-theme-blue-color a {
-	color: var(--color-theme-blue);
+	color: var(--color-blue);
 }
 
 .has-theme-blue-background-color {
-	background-color: var(--color-theme-blue);
+	background-color: var(--color-blue);
 }
 
 .has-theme-yellow-color,
 .has-theme-yellow-color a {
-	color: var(--color-theme-yellow);
+	color: var(--color-yellow);
 }
 
 .has-theme-yellow-background-color {
-	background-color: var(--color-theme-yellow);
+	background-color: var(--color-yellow);
 }
 
 .has-theme-black-color,
 .has-theme-black-color a {
-	color: var(--color-theme-black);
+	color: var(--color-black);
 }
 
 .has-theme-black-background-color {
-	background-color: var(--color-theme-black);
+	background-color: var(--color-black);
 }
 
 .has-theme-gray-dark-color,
 .has-theme-gray-dark-color a {
-	color: var(--color-theme-gray-dark);
+	color: var(--color-gray-dark);
 }
 
 .has-theme-gray-dark-background-color {
-	background-color: var(--color-theme-gray-dark);
+	background-color: var(--color-gray-dark);
 }
 
 .has-theme-gray-color,
 .has-theme-gray-color a {
-	color: var(--color-theme-gray);
+	color: var(--color-gray);
 }
 
 .has-theme-gray-background-color {
-	background-color: var(--color-theme-gray);
+	background-color: var(--color-gray);
 }
 
 .has-theme-gray-light-color,
 .has-theme-gray-light-color a {
-	color: var(--color-theme-gray-light);
+	color: var(--color-gray-light);
 }
 
 .has-theme-gray-light-background-color {
-	background-color: var(--color-theme-gray-light);
+	background-color: var(--color-gray-light);
 }
 
 .has-theme-light-color,
 .has-theme-light-color a {
-	color: var(--color-theme-light);
+	color: var(--color-light);
 }
 
 .has-theme-light-background-color {
-	background-color: var(--color-theme-light);
+	background-color: var(--color-light);
 }
 
 .has-theme-white-color,
 .has-theme-white-color a {
-	color: var(--color-theme-white);
+	color: var(--color-white);
 }
 
 .has-theme-white-background-color {
-	background-color: var(--color-theme-white);
+	background-color: var(--color-white);
 }
 
 /*--------------------------------------------------------------
@@ -305,19 +305,19 @@
 --------------------------------------------------------------*/
 
 .has-small-font-size {
-	font-size: var(--font-size-small);
+	font-size: var(--fs-small);
 }
 
 .has-regular-font-size {
-	font-size: var(--font-size-regular);
+	font-size: var(--fs-regular);
 }
 
 .has-large-font-size {
-	font-size: var(--font-size-large);
+	font-size: var(--fs-large);
 }
 
 .has-larger-font-size {
-	font-size: var(--font-size-larger);
+	font-size: var(--fs-larger);
 }
 
 /*--------------------------------------------------------------
@@ -342,7 +342,7 @@
 .acf-map {
 	width: 100%;
 	height: 400px;
-	border: 1px solid var(--color-theme-secondary);
+	border: 1px solid var(--color-secondary);
 	margin: 20px 0;
 }
 

@@ -30,12 +30,12 @@ select,
 	line-height: 2.5;
 	border-width: 1px;
 	border-style: solid;
-	border-color: var(--color-theme-gray-light);
+	border-color: var(--color-gray-light);
 	border-radius: var(--rounded-radius);
 	outline: none;
-	background-color: var(--color-theme-white);
+	background-color: var(--color-white);
 	background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
-	color: var(--color-theme-gray);
+	color: var(--color-gray);
 	box-shadow: none;
 	vertical-align: baseline;
 	transition: all 0.3s;
@@ -76,7 +76,7 @@ input[type="color"]:hover,
 textarea:hover,
 select:hover,
 .ui-select:hover {
-	border-color: var(--color-theme-primary);
+	border-color: var(--color-primary);
 }
 
 .ui-field:focus,
@@ -98,8 +98,8 @@ input[type="color"]:focus,
 textarea:focus,
 select:focus,
 .ui-select:focus {
-	border-color: var(--color-theme-primary);
-	color: var(--color-theme-primary);
+	border-color: var(--color-primary);
+	color: var(--color-primary);
 }
 
 .is_disabled,

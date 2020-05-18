@@ -8,6 +8,6 @@
 	align-items: flex-end;
 
 	&:not(.has-background) {
-		background-color: var(--color-theme-gray-light);
+		background-color: var(--color-gray-light);
 	}
 }

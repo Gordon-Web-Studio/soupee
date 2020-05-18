@@ -4,15 +4,15 @@
 # Tables
 --------------------------------------------------------------*/
 .ui-table {
-	border-color: var(--color-theme-gray-light);
+	border-color: var(--color-gray-light);
 	background-color: transparent;
 	font-size: 14px;
 
 	& th {
 		border-top: 0;
-		border-bottom: 2px solid var(--color-theme-gray-light);
+		border-bottom: 2px solid var(--color-gray-light);
 		background-color: #e8eaed;
-		color: var(--color-theme-gray-dark);
+		color: var(--color-gray-dark);
 		text-align: left;
 		font-size: 11px;
 		letter-spacing: 1px;
@@ -28,26 +28,26 @@
 
 	& tbody tr {
 		&:hover {
-			background: var(--color-theme-primary);
-			color: var(--color-theme-primary-light);
+			background: var(--color-primary);
+			color: var(--color-primary-light);
 		}
 	}
 
 	& td {
-		border-top: 1px solid var(--color-theme-gray-light);
+		border-top: 1px solid var(--color-gray-light);
 	}
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-	background-color: rgba(var(--color-theme-gray), 0.075);
+	background-color: rgba(var(--color-gray), 0.075);
 }
 
 .table-bordered {
-	border: 1px solid var(--color-theme-gray-light);
+	border: 1px solid var(--color-gray-light);
 
 	& th,
 	& td {
-		border: 1px solid var(--color-theme-gray-light);
+		border: 1px solid var(--color-gray-light);
 	}
 
 	& thead {

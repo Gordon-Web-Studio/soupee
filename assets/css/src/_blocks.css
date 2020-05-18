@@ -317,7 +317,7 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 }
 
 .block-tagline {
-	color: var(--color-theme-gray-light);
+	color: var(--color-gray-light);
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 4px;

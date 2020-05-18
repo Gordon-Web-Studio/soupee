@@ -70,15 +70,15 @@ img.align-right {
 @each $color in primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, red, green,
 blue, yellow, black, gray-dark, gray, gray-light, light, white {
 .text-$(color) {
-	color: var(--color-theme-$(color));
+	color: var(--color-$(color));
 }
 
 .bg-$(color) {
-	background-color: var(--color-theme-$(color));
+	background-color: var(--color-$(color));
 }
 
 .border-$(color) {
-	border-color: var(--color-theme-$(color));
+	border-color: var(--color-$(color));
 }
 }
 /* stylelint-enable */
@@ -126,7 +126,7 @@ blue, yellow, black, gray-dark, gray, gray-light, light, white {
 
 /* Add Box Shadow */
 .box-shadow {
-	box-shadow: 0 9px 17px -6px rgba(var(--color-theme-black), 0.25);
+	box-shadow: 0 9px 17px -6px rgba(var(--color-black), 0.25);
 }
 
 /* Remove box-shadow. */
@@ -231,7 +231,7 @@ blue, yellow, black, gray-dark, gray, gray-light, light, white {
 
 /* Text shadow */
 .text-shadow {
-	text-shadow: 0 2px 4px rgba(var(--color-theme-black), 0.5);
+	text-shadow: 0 2px 4px rgba(var(--color-black), 0.5);
 }
 
 /* Text spacing. */
@@ -713,7 +713,7 @@ blue, yellow, black, gray-dark, gray, gray-light, light, white {
 	width: 100%;
 	height: 1px;
 	overflow: hidden;
-	background-color: var(--color-theme-gray-light);
+	background-color: var(--color-gray-light);
 	border: 0;
 }
 

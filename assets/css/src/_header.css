@@ -6,7 +6,7 @@
 .site-header {
 	position: relative;
 	width: 100%;
-	color: var(--color-theme-white);
+	color: var(--color-white);
 	z-index: 1;
 
 	& div,
@@ -17,10 +17,10 @@
 	&.header-alt {
 		position: fixed;
 		background-color: transparent;
-		color: var(--color-theme-secondary-dark);
+		color: var(--color-secondary-dark);
 
 		& .icon-bar {
-			background-color: var(--color-theme-secondary-dark);
+			background-color: var(--color-secondary-dark);
 		}
 	}
 }

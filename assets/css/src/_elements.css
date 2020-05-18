@@ -103,7 +103,7 @@ tfoot {
 	display: block;
 	width: 1px;
 	height: 100px;
-	background-color: var(--color-theme-gray-light);
+	background-color: var(--color-gray-light);
 }
 
 /* stylelint-disable */

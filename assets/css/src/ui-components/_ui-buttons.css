@@ -30,18 +30,18 @@
 
 	&,
 	&:visited {
-		border-color: var(--color-theme-gray-light);
-		background: var(--color-theme-gray-light);
-		color: var(--color-theme-gray-dark);
+		border-color: var(--color-gray-light);
+		background: var(--color-gray-light);
+		color: var(--color-gray-dark);
 	}
 
 	&:hover,
 	&:focus,
 	&:active,
 	&.is_active {
-		border-color: var(--color-theme-gray-dark);
-		background: var(--color-theme-gray-dark);
-		color: var(--color-theme-light);
+		border-color: var(--color-gray-dark);
+		background: var(--color-gray-dark);
+		color: var(--color-light);
 	}
 
 	&:disabled,
@@ -90,98 +90,98 @@
 /* button styles. */
 .btn-primary,
 .btn-primary:visited {
-	border-color: var(--color-theme-primary);
-	background: var(--color-theme-primary);
-	color: var(--color-theme-secondary);
+	border-color: var(--color-primary);
+	background: var(--color-primary);
+	color: var(--color-secondary);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.is_active {
-	border-color: var(--color-theme-primary-dark);
-	background: var(--color-theme-primary-dark);
-	color: var(--color-theme-secondary);
+	border-color: var(--color-primary-dark);
+	background: var(--color-primary-dark);
+	color: var(--color-secondary);
 }
 
 .btn-secondary,
 .btn-secondary:visited {
-	border-color: var(--color-theme-secondary);
-	background: var(--color-theme-secondary);
-	color: var(--color-theme-white);
+	border-color: var(--color-secondary);
+	background: var(--color-secondary);
+	color: var(--color-white);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.is_active {
-	border-color: var(--color-theme-secondary-dark);
-	background: var(--color-theme-secondary-dark);
-	color: var(--color-theme-white);
+	border-color: var(--color-secondary-dark);
+	background: var(--color-secondary-dark);
+	color: var(--color-white);
 }
 
 .btn-white,
 .btn-white:visited {
-	border-color: var(--color-theme-white);
-	background: var(--color-theme-white);
-	color: var(--color-theme-black);
+	border-color: var(--color-white);
+	background: var(--color-white);
+	color: var(--color-black);
 }
 
 .btn-white:hover,
 .btn-white:focus,
 .btn-white:active,
 .btn-white.is_active {
-	border-color: var(--color-theme-gray-light);
-	background: var(--color-theme-gray-light);
-	color: var(--color-theme-black);
+	border-color: var(--color-gray-light);
+	background: var(--color-gray-light);
+	color: var(--color-black);
 }
 
 .btn-outline-primary,
 .btn-outline-primary:visited {
-	border-color: var(--color-theme-primary);
+	border-color: var(--color-primary);
 	background: transparent;
-	color: var(--color-theme-primary);
+	color: var(--color-primary);
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 .btn-outline-primary:active,
 .btn-outline-primary.is_active {
-	border-color: var(--color-theme-primary-dark);
-	background: var(--color-theme-primary-dark);
-	color: var(--color-theme-white);
+	border-color: var(--color-primary-dark);
+	background: var(--color-primary-dark);
+	color: var(--color-white);
 }
 
 .btn-outline-secondary,
 .btn-outline-secondary:visited {
-	border-color: var(--color-theme-secondary);
+	border-color: var(--color-secondary);
 	background: transparent;
-	color: var(--color-theme-secondary);
+	color: var(--color-secondary);
 }
 
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus,
 .btn-outline-secondary:active,
 .btn-outline-secondary.is_active {
-	border-color: var(--color-theme-secondary-dark);
-	background: var(--color-theme-secondary-dark);
-	color: var(--color-theme-white);
+	border-color: var(--color-secondary-dark);
+	background: var(--color-secondary-dark);
+	color: var(--color-white);
 }
 
 .btn-outline-white,
 .btn-outline-white:visited {
-	border-color: var(--color-theme-white);
+	border-color: var(--color-white);
 	background: transparent;
-	color: var(--color-theme-white);
+	color: var(--color-white);
 }
 
 .btn-outline-white:hover,
 .btn-outline-white:focus,
 .btn-outline-white:active,
 .btn-outline-white.is_active {
-	border-color: var(--color-theme-white);
-	background: var(--color-theme-white);
-	color: var(--color-theme-black);
+	border-color: var(--color-white);
+	background: var(--color-white);
+	color: var(--color-black);
 }
 
 /* Button sizes. */

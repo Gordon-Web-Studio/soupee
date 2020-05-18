@@ -9,7 +9,7 @@
 	align-items: center;
 
 	&:not(.has-background) {
-		background-color: var(--color-theme-gray-light);
+		background-color: var(--color-gray-light);
 	}
 
 	& .slideshow-container {

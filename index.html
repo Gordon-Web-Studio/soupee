@@ -8,9 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Russo+One&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/global.min.css" />
+        <link rel="stylesheet" href="assets/css/soupee.min.css" />
+        <link rel="stylesheet" href="assets/css/layouts/layout-main.min.css" />
         <link rel="icon" href="icon.png" />
-        <title>Soupee - Frontend Framework with Modern CSS</title>
+        <title>Soupee - Frontend Framework with Modern CSS4</title>
     </head>
     
     <body class="soupee-theme page homepage">
@@ -20,47 +21,27 @@
                 <div class="fluid-container">
                     <div class="flex content-between align-center">
                         <div class="flex content-start align-center">
-                            <!-- <button class="ui-menu-toggle mr-3" data-modal-target="modal-nav">
-
-                            <div class="icon-toggle">
-
-                                <span class="icon-bar"></span>
-
-                                <span class="icon-bar"></span>
-
-                                <span class="icon-bar"></span>
-
-                            </div>
-
-                        </button> -->
+                            <button class="ui-menu-toggle mr-3" aria-label="Open menu" aria-controls="primary-menu"
+                            aria-expanded="false">
+                                <div class="icon-toggle"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                                </div>
+                            </button>
                             <div class="site-branding"> <a href="./" class="custom-logo-link" rel="home">
 
                                 <img class="custom-logo" src="assets/images/soupee-logo-alt.svg" alt="Soupee Logo">
 
                             </a>
                             </div>
-                        </div>
-                        <div class="flex content-center align-center"></div>
-                        <div class="flex content-end align-center">
-                            <nav id="site-navigation" class="hide main-navigation nav--toggle-sub nav--toggle-small"
-                            aria-label="Main menu">
-                                <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-menu"
-                                aria-expanded="false">Menu</button>
+                            <nav id="site-navigation" class="main-navigation ml-5" aria-label="Main menu">
                                 <div class="primary-menu-container">
-                                    <ul id="primary-menu" class="menu">
+                                    <ul id="primary-menu" class="menu list-inline">
                                         <li class="menu-item current-menu-item"><a href="./" aria-current="page">Home</a>
 
                                         </li>
-                                        <li class="menu-item"><a href="./">Layout</a>
+                                        <li class="menu-item"><a href="./">Documentation</a>
 
                                         </li>
-                                        <li class="menu-item"><a href="./">Content</a>
-
-                                        </li>
-                                        <li class="menu-item"><a href="./">Components</a>
-
-                                        </li>
-                                        <li class="menu-item"><a href="./">Utilies</a>
+                                        <li class="menu-item"><a href="./">Examples</a>
 
                                         </li>
                                         <li class="menu-item"><a href="./">About</a>
@@ -70,46 +51,69 @@
                                 </div>
                             </nav>
                         </div>
+                        <div class="flex content-center align-center"></div>
+                        <div class="flex content-end align-center">
+                            <ul id="primary-menu" class="menu list-inline">
+                                <li class="menu-item"><a class="inline-block mr-3" href="https://github.com/Gordon-Web-Studio/soupee/"
+                                    target="_blank"><i class="fab fa-github fa-2x"></i></a>
+
+                                </li>
+                                <li class="menu-item"><a class="ui-btn btn-outline-primary btn-sm" href="https://github.com/Gordon-Web-Studio/soupee/archive/master.zip">Download</a>
+
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 </header>
                 <!-- #masthead -->
-                <div class="flex content-center align-center text-center mb-5">
-                    <div class="inner-container">
-                         <h1 class="my-5">
-
-      <img class="one-fifth box-center" src="assets/images/soupee-logo-vertical-alt.svg" alt="Soupee">
-
-    </h1>
-                         <h3 class="my-2">Frontend Framework with Modern CSS</h3>
-                        <p>Scalable and modular front-end framework for faster web development.</p>
-                        <p><a class="ui-btn btn-primary mt-3" href="#" role="button">Learn more &raquo;</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="flex content-center align-center text-center">
+                <div class="l-block">
                     <div class="inner-container">
                         <div class="row">
-                            <div class="col one-third">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <div class="col half-md text-center text-left-md order-2 order-1-md">
+                                 <h1 class="my-2">Frontend Framework with Modern CSS</h1>
+                                <p>Scalable and modular front-end framework for faster web development.</p>
+                                <div
+                                class="block-buttons mt-3"> <a class="ui-btn btn-primary" href="#" role="button">Get started</a>
+                                    <a
+                                    class="ui-btn btn-outline-primary" href="#" role="button">Download</a>
+                            </div> <small class="block letter-space-4 text-uppercase fs8 mt-3">v0.1 Beta Version</small>
+                        </div>
+                        <div class="col half-md box-center w-200 w-300-md order-1 order-2-md my-4 my-0-md">
+                            <div class="m-img-container">
+                                <div class="inner-content">
+                                    <img src="assets/images/soupee-logo-vertical-alt.svg" alt="Soupee">
+                                </div>
                             </div>
-                            <div class="col one-third">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            </div>
-                            <div class="col one-third">
-                                <img class="img-fluid" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                            </div>
+                            </h1>
                         </div>
                     </div>
                 </div>
-                <footer class="site-footer my-3" id="colophon">
-                    <div class="site-info">
-                        <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Gordon Web Studio - All Right Reserved</small>
-                        </div>
+        </div>
+        <div class="flex content-center align-center text-center">
+            <div class="inner-container">
+                <div class="row content-center-sm">
+                    <div class="col half-sm one-thirds-md mb-3">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
                     </div>
-                </footer>
+                    <div class="col half-sm one-thirds-md mb-3">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="col half-sm one-thirds-md mb-3">
+                        <img class="img-fluid" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer my-3" id="colophon">
+            <div class="site-info">
+                <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Gordon Web Studio - All Right Reserved</small>
+                </div>
+            </div>
+        </footer>
         </div>
         <!-- #page -->
+        <script src="https://kit.fontawesome.com/3c9916881b.js" crossorigin="anonymous"></script>
         <script src="js/global.min.js"></script>
     </body>
 

@@ -62,7 +62,6 @@ const paths = {
 	},
 	html: {
 		src: `${ assetsDir }/html/src/*.html`,
-		docs: `${ assetsDir }/html/src/docs/`,
 		partials: `${ assetsDir }/html/src/partials/`,
 		dest: `${ rootPath }/`,
 	},
@@ -115,6 +114,7 @@ for ( const filePath of filesToCopy.concat( additionalFilesToCopy ) ) {
 // Override paths for production
 if ( isProd ) {
 	paths.html.dest = `${ prodThemePath }/`;
+	paths.docs.dest = `${ prodThemePath }/docs/`;
 	paths.styles.dest = `${ prodAssetsDir }/css/`;
 	paths.scripts.dest = `${ prodAssetsDir }/js/`;
 	paths.images.dest = `${ prodAssetsDir }/images/`;

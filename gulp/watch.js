@@ -13,6 +13,7 @@ import { paths } from './constants';
 import { backslashToForwardSlash } from './utils';
 import { reload } from './browserSync';
 import html from './html';
+import docs from './docs';
 import images from './images';
 import scripts from './scripts';
 import styles from './styles';
@@ -29,6 +30,10 @@ export default function watch() {
 	gulpWatch( backslashToForwardSlash( paths.html.src ), series( html, reload ) );
 
 	gulpWatch( backslashToForwardSlash( paths.html.partials ), series( html, reload ) );
+	
+	gulpWatch( backslashToForwardSlash( paths.docs.src ), series( docs, reload ) );
+
+	gulpWatch( backslashToForwardSlash( paths.docs.partials ), series( docs, reload ) );
 
 	gulpWatch( backslashToForwardSlash( paths.styles.src[ 0 ] ), styles );
 

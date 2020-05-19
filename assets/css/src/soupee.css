@@ -21,7 +21,6 @@
 @import "core/_links.css";
 @import "core/_global.css";
 @import "core/_grid.css";
-@import "core/_utilities.css";
 @import "core/_accessibility.css";
 
 /* UI Components */
@@ -32,3 +31,6 @@
 @import "ui-components/_ui-forms.css";
 @import "ui-components/_ui-media.css";
 @import "ui-components/_ui-img-container.css";
+
+/* Utilities Classes */
+@import "core/_utilities.css";

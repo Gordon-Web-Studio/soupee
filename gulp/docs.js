@@ -18,12 +18,12 @@ import { paths } from './constants';
  * @param {function} done function to call when async processes finish
  * @return {Stream} single stream
  */
-export default function html( done ) {
+export default function docs( done ) {
 	return pump( [
-		src( paths.html.src )
+		src( paths.docs.src )
 			.pipe( htmlPartial( {
-				basePath: paths.html.partials,
+				basePath: paths.docs.partials,
 			} ) ),
-		dest( paths.html.dest ),
+		dest( paths.docs.dest ),
 	], done );
 }

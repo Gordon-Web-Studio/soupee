@@ -30,10 +30,25 @@ body {
 body {
 	color: var(--global-font-color);
 	background: var(--global-background-color);
+	font-family: var(--global-font-family);
+	font-size: var(--fs-regular);
+	line-height: var(--global-font-line-height);
 
 	/* Fallback for when there is no custom background color defined. */
 }
 /* stylelint-enable */
+
+/* Dark mode .is-inverted */
+.site .is-inverted,
+body.is-inverted {
+	color: var(--global-font-color-inverted);
+	background: var(--global-background-color-inverted);
+
+	& .divider {
+		background-color: var(--color-gray-dark);
+		opacity: 0.25;
+	}
+}
 
 /* stylelint-disable */
 hr {
@@ -62,6 +77,15 @@ code:not([class*="language-"]) {
 	border-radius: 4px;
 }
 
+:not(pre)>code[class*=language-], 
+pre[class*=language-] {
+	padding: 1.5rem;
+	background-color: #202038;
+	border-radius: var(--rounded-radius);
+	font-size: var(--fs7);
+	line-height: 1;
+}		
+
 cite {
 	font-style: italic;
 }
@@ -72,7 +96,7 @@ button {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin-top: 0;
 }
 
 ul {

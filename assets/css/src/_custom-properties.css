@@ -6,8 +6,10 @@
  **/
 
 :root {
-	--global-font-color: #ffffff;
-	--global-background-color: #1c1c2a;
+	--global-font-color: #1c2833;
+	--global-background-color: #ffffff;
+	--global-font-color-inverted: #ffffff;
+	--global-background-color-inverted: #1c1c2a;
 	--global-font-family: "Poppins", sans-serif;
 	--global-font-size: 1rem;
 	--global-font-line-height: 1.2;
@@ -16,23 +18,46 @@
 	--element-height: 3rem;
 	--dropdown-symbol-width: 0.7em;
 
-	/* Custom editor colors */
+	/* Custom colors */
 	--color-primary: #00d7c8;
 	--color-primary-light: #73f3ea;
 	--color-primary-dark: #00a79b;
-	--color-secondary: #1c1c2a;
+	--color-secondary: #313146;
 	--color-secondary-light: #3e3e55;
-	--color-secondary-dark: #14141d;
-	--color-red: #c0392b;
+	--color-secondary-dark: #1f1f2f;
+
+	/* General colors */
+	--color-purple: #9c27b0;
+	--color-purple-dark: #7e1d8f;
 	--color-green: #27ae60;
+	--color-green-dark: #0b9b47;
 	--color-blue: #2980b9;
+	--color-blue-dark: #0765a3;
 	--color-yellow: #f1c40f;
-	--color-black: #1c2833;
+	--color-yellow-dark: #e2b500;
+	--color-red: #c0392b;
+	--color-red-dark: #a71a0b;
+	--color-black: #11171d;
 	--color-white: #fff;
+	--color-dark: #151520;
 	--color-light: #f8f8f8;
+
+	/* Gray colors */
 	--color-gray: #9e9e9e;
 	--color-gray-light: #e9e9e9;
 	--color-gray-dark: #545454;
+
+	/* Helper colors */
+	--color-news: var(--color-purple);
+	--color-news-dark: var(--color-purple-dark);
+	--color-success: var(--color-green);
+	--color-success-dark: var(--color-green-dark);
+	--color-info: var(--color-blue);
+	--color-info-dark: var(--color-blue-dark);
+	--color-warning: var(--color-yellow);
+	--color-warning-dark: var(--color-yellow-dark);
+	--color-error: var(--color-red);
+	--color-error-dark: var(--color-red-dark);
 
 	/* Link colors */
 	--color-link: var(--color-primary);
@@ -76,7 +101,7 @@
 
 	/* Borders. */
 	--border-size: 1px;
-	--rounded-radius: 4px;
+	--rounded-radius: 6px;
 	--pill-radius: 25px;
 	--circle-radius: 50%;
 

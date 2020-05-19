@@ -115,15 +115,15 @@
 .btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.is_active {
-	border-color: var(--color-secondary-dark);
+	border-color: var(--color-secondary);
 	background: var(--color-secondary-dark);
 	color: var(--color-white);
 }
 
 .btn-white,
 .btn-white:visited {
-	border-color: var(--color-white);
-	background: var(--color-white);
+	border-color: var(--color-gray-light);
+	background: var(--color-light);
 	color: var(--color-black);
 }
 
@@ -131,9 +131,41 @@
 .btn-white:focus,
 .btn-white:active,
 .btn-white.is_active {
+	border-color: var(--color-secondary-dark);
+	background: var(--color-dark);
+	color: var(--color-white);
+}
+
+.btn-black,
+.btn-black:visited {
+	border-color: var(--color-dark);
+	background: var(--color-dark);
+	color: var(--color-white);
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.is_active {
 	border-color: var(--color-gray-light);
-	background: var(--color-gray-light);
+	background: var(--color-light);
 	color: var(--color-black);
+}
+
+.btn-gray,
+.btn-gray:visited {
+	border-color: var(--color-gray);
+	background: var(--color-gray);
+	color: var(--color-white);
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.is_active {
+	border-color: var(--color-gray-dark);
+	background: var(--color-gray-dark);
+	color: var(--color-white);
 }
 
 .btn-outline-primary,
@@ -184,11 +216,41 @@
 	color: var(--color-black);
 }
 
+/* Helper Buttons. */
+@each $helper in news, success, info, warning, error {
+.btn-$(helper),
+.btn-$(helper):visited {
+	border-color: var(--color-$(helper));
+	background: var(--color-$(helper));
+	color: var(--color-white);
+}
+
+.btn-$(helper):hover,
+.btn-$(helper):focus,
+.btn-$(helper):active,
+.btn-$(helper).is_active {
+	border-color: var(--color-$(helper)-dark);
+	background: var(--color-$(helper)-dark);
+	color: var(--color-white);
+}
+}
+
 /* Button sizes. */
 .btn-sm {
 	padding: 0.5rem 1rem;
 	font-size: 13px;
 	height: auto;
+}
+
+.btn-md {
+	padding: 10px 20px;
+	font-size: 15px;
+	height: auto;
+
+	@media (--sm) {
+		padding: 10px 40px;
+		height: 60px;
+	}
 }
 
 .btn-lg {
@@ -197,7 +259,7 @@
 	height: auto;
 
 	@media (--sm) {
-		padding: 25px 80px;
+		padding: 10px 60px;
 		height: 70px;
 	}
 }

@@ -62,8 +62,14 @@ const paths = {
 	},
 	html: {
 		src: `${ assetsDir }/html/src/*.html`,
+		docs: `${ assetsDir }/html/src/docs/`,
 		partials: `${ assetsDir }/html/src/partials/`,
 		dest: `${ rootPath }/`,
+	},
+	docs: {
+		src: `${ assetsDir }/html/src/docs/*.html`,
+		partials: `${ assetsDir }/html/src/docs/partials/`,
+		dest: `${ rootPath }/docs/`,
 	},
 	styles: {
 		src: [

@@ -670,10 +670,9 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 }
 }
 
-@each $breakpoint, $key, $size in (sm, md, lg), 
-(0, 1, 2, 3, 4, 5, 6),
-(0, 1rem, 1.5rem, 2rem, 3rem, 4.5rem, 6rem) {
+@each $breakpoint in (sm, md, lg) {
 @media (--$(breakpoint)) {
+	@each $key, $size in (0, 1, 2, 3, 4, 5, 6),	(0, 1rem, 1.5rem, 2rem, 3rem, 4.5rem, 6rem) {
 	.m-$(key)-$(breakpoint) {
 		margin: $(size);
 	}
@@ -732,6 +731,7 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 
 	.pr-$(key)-$(breakpoint) {
 		padding-right: $(size);
+	}
 	}
 }
 }

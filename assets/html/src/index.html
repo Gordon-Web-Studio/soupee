@@ -3,17 +3,17 @@
 <div class="l-block">
   <div class="inner-container">
     <div class="row">
-      <div class="col three-fifths-md text-center text-left-md order-2 order-1-md">
-        <h1 class="h3 my-2">Frontend Framework <small>+ Build Toolkit</small></h1>
-        <p>
+      <div class="col three-fifths-md order-2 order-1-md">
+        <h1 class="my-2">Frontend Framework <small>+ Build Toolkit</small></h1>
+        <p class="fs5">
           Performance focused, scalable and modular frontend framework for faster web development. 
-          It feature Modern CSS processed through PostCSS and ES6 Javascript and a build process toolkit. 
+          It feature Modern CSS through PostCSS and ES6 Javascript and a build process toolkit. 
         </p>
         <div class="block-buttons">
           <a class="ui-btn btn-primary" href="docs/" role="button">Get started</a>
           <a class="ui-btn btn-outline-primary" href="https://github.com/Gordon-Web-Studio/soupee/archive/master.zip" target="_blank" role="button">Download</a>
         </div>
-        <small class="block letter-space-4 text-uppercase fs8 mt-3">v0.1 Beta Version</small>
+        <small class="block letter-space-2 text-up fs8 mt-3">v0.1 Beta</small>
       </div>
       <div class="col two-fifths-md box-center w-200 w-300-md order-1 order-2-md my-4 my-0-md">
         <div class="m-img-container">
@@ -37,6 +37,78 @@
       </div>
       <div class="col half-sm one-thirds-md mb-3">
         <img class="img-fluid"  src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="l-block">
+  <div class="inner-container">
+    <div class="row mb-5">
+      <div class="col"><h3>Quick Start <small>Use tomorrow’s CSS today!</small></h3></div>
+      <div class="col half-md">
+        <p>Soupee uses <a href="https://nodejs.org/en/" target="_blank">NPM</a>, and <a href="https://gulpjs.com/" target="_blank">Gulp 4</a>. Enjoy Modern CSS, CSS custom properties, CSS nesting, and media query range and simple grid system.</p>
+      </div>
+      <div class="col half-md">
+        <pre><code class="language-bash">
+          $ npm install
+        </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><h3>Build Commands <small>Available processes</small></h3></div>
+    </div>
+    <div class="row">
+      <div class="col"><h5 class="text-primary">dev watch process</h5></div>
+    </div>
+    <div class="row">
+      <div class="col half-md">
+        <p><code>npm run dev</code> will run the default development task that processes source files. While this process is running, source files will be watched for changes and the BrowserSync server will run. This process is optimized for speed so you can iterate quickly.</p>
+      </div>
+      <div class="col half-md">
+        <pre><code class="language-bash">
+          $ npm run dev
+        </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><h5 class="text-primary">dev build process</h5></div>
+    </div>
+    <div class="row">
+      <div class="col half-md">
+        <p><code>npm run build</code> processes source files one-time. It does not watch for changes nor start the BrowserSync server.</p>
+      </div>
+      <div class="col half-md">
+        <pre><code class="language-bash">
+          $ npm run build
+        </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><h5 class="text-primary">production bundle process</h5></div>
+    </div>
+    <div class="row">
+      <div class="col half-md">
+        <p><code>npm run bundle</code> generates a production ready theme as a new theme directory and, optionally, a .zip archive. This builds all source files, optimizes the built files for production, does a string replacement and runs translations. Non-essential files from the wp-rig development theme are not copied to the production theme.</p>
+      </div>
+      <div class="col half-md">
+        <pre><code class="language-bash">
+          $ npm run bundle
+        </code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col"><h5 class="text-primary">zip archive</h5></div>
+    </div>
+    <div class="row mb-5">
+      <div class="col half-md">
+        <p>To bundle the theme without creating a zip archive, define the export:compress setting in <code>./config/config.json</code> to <code>false</code>.</p>
+      </div>
+      <div class="col half-md">
+        <pre><code class="language-js">
+          export: {
+            compress: false
+          }
+        </code></pre>
       </div>
     </div>
   </div>

@@ -62,7 +62,7 @@
 	/* Link colors */
 	--color-link: var(--color-primary);
 	--color-link-hover: var(--color-primary-dark);
-	--color-link-visited: var(--color-primary-dark);
+	--color-link-visited: var(--color-primary);
 
 	/* Quote colors */
 	--color-quote-border: var(--color-black);

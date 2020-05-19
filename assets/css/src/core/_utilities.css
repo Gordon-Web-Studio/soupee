@@ -186,15 +186,15 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 }
 
 /* Text transforms */
-.text-uppercase {
+.text-up {
 	text-transform: uppercase;
 }
 
-.text-lowercase {
+.text-down {
 	text-transform: lowercase;
 }
 
-.text-capitalize {
+.text-cap {
 	text-transform: capitalize;
 }
 

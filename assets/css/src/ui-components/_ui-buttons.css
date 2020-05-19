@@ -19,9 +19,9 @@
 	border-radius: var(--rounded-radius);
 	text-decoration: none;
 	font-family: var(--global-font-family);
-	font-weight: var(--ui-btn-font-weight, 500);
+	font-weight: var(--ui-btn-font-weight, 400);
 	line-height: var(--ui-btn-line-height, 1.5);
-	font-size: var(--ui-btn-font-size, 14px);
+	font-size: var(--ui-btn-font-size, var(--fs-small));
 	white-space: nowrap;
 	vertical-align: middle;
 	touch-action: manipulation;

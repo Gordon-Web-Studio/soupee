@@ -37,7 +37,7 @@ export const buildDev = parallel(
  * Export theme for distribution.
  */
 export const bundleTheme = series(
-    prodPrep, parallel( series(html, docs), scripts, styles, images), prodCompress,
+    prodPrep, parallel( series(html, docs), scripts, styles, images), prodCompress
 );
 
 

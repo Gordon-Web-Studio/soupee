@@ -314,6 +314,10 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 	position: static;
 }
 
+.position-sticky {
+	position: sticky;
+}
+
 /* Positions responsive. */
 @each $size in sm, md, lg {
 @media (--$(size)) {
@@ -340,6 +344,11 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 @each $size in sm, md, lg {
 @media (--$(size)) {
 	.hide-$(size) {
+		display: none;
+	}
+}
+@media (--$(size)-max) {
+	.hide-$(size)-max {
 		display: none;
 	}
 }
@@ -610,63 +619,63 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 @each $key, $size in (0, 1, 2, 3, 4, 5, 6),
 (0, 1rem, 1.5rem, 2rem, 3rem, 4.5rem, 6rem) {
 .m-$(key) {
-	margin: $(size);
+	margin: $(size) !important;
 }
 
 .p-$(key) {
-	padding: $(size);
+	padding: $(size) !important;
 }
 
 .my-$(key) {
-	margin-top: $(size);
-	margin-bottom: $(size);
+	margin-top: $(size) !important;
+	margin-bottom: $(size) !important;
 }
 
 .py-$(key) {
-	padding-top: $(size);
-	padding-bottom: $(size);
+	padding-top: $(size) !important;
+	padding-bottom: $(size) !important;
 }
 
 .mx-$(key) {
-	margin-left: $(size);
-	margin-right: $(size);
+	margin-left: $(size) !important;
+	margin-right: $(size) !important;
 }
 
 .px-$(key) {
-	padding-left: $(size);
-	padding-right: $(size);
+	padding-left: $(size) !important;
+	padding-right: $(size) !important;
 }
 
 .mt-$(key) {
-	margin-top: $(size);
+	margin-top: $(size) !important;
 }
 
 .pt-$(key) {
-	padding-top: $(size);
+	padding-top: $(size) !important;
 }
 
 .mb-$(key) {
-	margin-bottom: $(size);
+	margin-bottom: $(size) !important;
 }
 
 .pb-$(key) {
-	padding-bottom: $(size);
+	padding-bottom: $(size) !important;
 }
 
 .ml-$(key) {
-	margin-left: $(size);
+	margin-left: $(size) !important;
 }
 
 .pl-$(key) {
-	padding-left: $(size);
+	padding-left: $(size) !important;
 }
 
 .mr-$(key) {
-	margin-right: $(size);
+	margin-right: $(size) !important;
 }
 
 .pr-$(key) {
-	padding-right: $(size);
+	padding-right: $(size) !important;
 }
 }
 
@@ -674,63 +683,63 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark {
 @media (--$(breakpoint)) {
 	@each $key, $size in (0, 1, 2, 3, 4, 5, 6),	(0, 1rem, 1.5rem, 2rem, 3rem, 4.5rem, 6rem) {
 	.m-$(key)-$(breakpoint) {
-		margin: $(size);
+		margin: $(size) !important;
 	}
 
 	.p-$(key)-$(breakpoint) {
-		padding: $(size);
+		padding: $(size) !important;
 	}
 
 	.my-$(key)-$(breakpoint) {
-		margin-top: $(size);
-		margin-bottom: $(size);
+		margin-top: $(size) !important;
+		margin-bottom: $(size) !important;
 	}
 
 	.py-$(key)-$(breakpoint) {
-		padding-top: $(size);
-		padding-bottom: $(size);
+		padding-top: $(size) !important;
+		padding-bottom: $(size) !important;
 	}
 
 	.mx-$(key)-$(breakpoint) {
-		margin-left: $(size);
-		margin-right: $(size);
+		margin-left: $(size) !important;
+		margin-right: $(size) !important;
 	}
 
 	.px-$(key)-$(breakpoint) {
-		padding-left: $(size);
-		padding-right: $(size);
+		padding-left: $(size) !important;
+		padding-right: $(size) !important;
 	}
 
 	.mt-$(key)-$(breakpoint) {
-		margin-top: $(size);
+		margin-top: $(size) !important;
 	}
 
 	.pt-$(key)-$(breakpoint) {
-		padding-top: $(size);
+		padding-top: $(size) !important;
 	}
 
 	.mb-$(key)-$(breakpoint) {
-		margin-bottom: $(size);
+		margin-bottom: $(size) !important;
 	}
 
 	.pb-$(key)-$(breakpoint) {
-		padding-bottom: $(size);
+		padding-bottom: $(size) !important;
 	}
 
 	.ml-$(key)-$(breakpoint) {
-		margin-left: $(size);
+		margin-left: $(size) !important;
 	}
 
 	.pl-$(key)-$(breakpoint) {
-		padding-left: $(size);
+		padding-left: $(size) !important;
 	}
 
 	.mr-$(key)-$(breakpoint) {
-		margin-right: $(size);
+		margin-right: $(size) !important;
 	}
 
 	.pr-$(key)-$(breakpoint) {
-		padding-right: $(size);
+		padding-right: $(size) !important;
 	}
 	}
 }

@@ -11,6 +11,7 @@
 @import "partials/_header.css";
 @import "partials/_footer.css";
 @import "partials/_navigation.css";
+@import "partials/_sidebar.css";
 @import "extras/_blocks.css";
 
 /*--------------------------------------------------------------
@@ -21,34 +22,52 @@
 	max-width: 100%;
 }
 
-.site-main {
-	min-height: 700px;
-}
+@media (--md) {
 
-@media (--sidebar) {
-
-	.has-sidebar .site {
+	[class*="has-sidebar-"] .site {
 		display: grid;
-		grid-template-columns: 3fr 1fr;
-		grid-gap: 2rem;
-		justify-content: center;
+		grid-template-columns: repeat(6, 1fr);
+
+		/* Preventing a CSS Grid items to blowout when inner content is wider */
+		& > * {
+			max-width: 100%;
+		}
 	}
 
+	.has-sidebar-left .site {
+		grid-template-areas:
+			"head head head head head head"
+			"side main main main main main"
+			"side foot foot foot foot foot";	
+	}
+
+	.has-sidebar-right .site {
+		grid-template-areas:
+			"head head head head head head"
+			"main main main main main side"
+			"side foot foot foot foot foot";	
+	}
+	
+	/* CSS Grid items */
 	.site-header {
-		grid-column: span 2;
+		grid-area: head;
 	}
 
 	.site-main {
-		grid-column: 1;
-		min-width: 0;
+		grid-area: main;
 	}
 
-	.primary-sidebar {
-		grid-column: 2;
-		min-width: 0;
+	.site-sidebar {
+		grid-area: side;	
 	}
 
 	.site-footer {
-		grid-column: span 2;
+		grid-area: foot;
+	}
+}
+
+main {
+	@media (--md) {
+		min-height: 650px;
 	}
 }

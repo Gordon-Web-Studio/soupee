@@ -21,7 +21,7 @@ import { cleanCSS, cleanJS } from './gulp/clean';
  * Map out the sequence of events on first load and make it the default task
  */
 export const firstRun = series(
-    cleanCSS, cleanJS, parallel(html, docs, images, styles, scripts), serve, watch
+    cleanCSS, cleanJS, parallel(series(html, docs), images, styles, scripts), serve, watch
 );
 
 export default firstRun;
@@ -30,7 +30,7 @@ export default firstRun;
  * Build theme for development without BrowserSync or watching
  */
 export const buildDev = parallel(
-    html, docs, images, styles, scripts
+    series(html, docs), images, styles, scripts
 );
 
 /**

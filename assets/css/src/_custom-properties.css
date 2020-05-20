@@ -14,9 +14,12 @@
 	--global-font-size: 1rem;
 	--global-font-line-height: 1.2;
 	--heading-font-family: "Russo One", sans-serif;
-	--content-width: 1200px;
+	--header-height: 75px;
+	--header-height-mobile: 60px;
+	--content-width: 1300px;
 	--element-height: 3rem;
 	--dropdown-symbol-width: 0.7em;
+	--sidebar-width: 260px;
 
 	/* Custom colors */
 	--color-primary: #00d7c8;
@@ -33,8 +36,10 @@
 	--color-green-dark: #0b9b47;
 	--color-blue: #2980b9;
 	--color-blue-dark: #0765a3;
-	--color-yellow: #f1c40f;
-	--color-yellow-dark: #e2b500;
+	--color-yellow: #f1e863;
+	--color-yellow-dark: #f6d933;
+	--color-orange: #f5ad28;
+	--color-orange-dark: #f59c28;
 	--color-red: #c0392b;
 	--color-red-dark: #a71a0b;
 	--color-black: #11171d;
@@ -54,8 +59,8 @@
 	--color-success-dark: var(--color-green-dark);
 	--color-info: var(--color-blue);
 	--color-info-dark: var(--color-blue-dark);
-	--color-warning: var(--color-yellow);
-	--color-warning-dark: var(--color-yellow-dark);
+	--color-warning: var(--color-orange);
+	--color-warning-dark: var(--color-orange-dark);
 	--color-error: var(--color-red);
 	--color-error-dark: var(--color-red-dark);
 

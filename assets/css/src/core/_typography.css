@@ -18,8 +18,8 @@ h6,
 .sup-h2,
 .sup-h3 {
 	font-family: var(--heading-font-family);
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin-top: var(--spacer);
+	margin-bottom: var(--spacer);
 
 	/* color: var(--color-primary); */
 	clear: both;
@@ -124,7 +124,7 @@ h6 small,
 	margin-top: 0.15rem;
 	font-weight: 400;
 	line-height: 1;
-	color: var(--color-gray);
+	color: var(--color-orange);
 }
 
 /* special headings for mastheads and banners. */

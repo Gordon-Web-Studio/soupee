@@ -202,17 +202,17 @@
 
 .btn-outline-white,
 .btn-outline-white:visited {
-	border-color: var(--color-white);
+	border-color: var(--color-light);
 	background: transparent;
-	color: var(--color-white);
+	color: var(--color-light);
 }
 
 .btn-outline-white:hover,
 .btn-outline-white:focus,
 .btn-outline-white:active,
 .btn-outline-white.is_active {
-	border-color: var(--color-white);
-	background: var(--color-white);
+	border-color: var(--color-light);
+	background: var(--color-light);
 	color: var(--color-black);
 }
 
@@ -284,18 +284,18 @@
 	width: 100%;
 }
 
-.btn-block-sm {
-
-	@media (--sm-max) {
+@each $size in sm, md, lg {
+@media (--$(size)) {
+	.btn-block-$(size) {
 		width: 100%;
 	}
 }
 
-.btn-block-lg {
-
-	@media (--sm) {
+@media (--$(size)-max) {
+	.btn-block-$(size)-max {
 		width: 100%;
 	}
+}
 }
 
 /* Button icons. */

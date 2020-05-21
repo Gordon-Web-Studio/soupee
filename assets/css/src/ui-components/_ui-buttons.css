@@ -49,6 +49,12 @@
 		opacity: 0.5;
 		cursor: not-allowed;
 	}
+
+	& > i,
+	& > svg {
+		margin-left: var(--spacer-1);
+		margin-right: var(--spacer-1);
+	}
 }
 
 .block-buttons {
@@ -308,4 +314,30 @@
 	& i:hover {
 		opacity: 0.6;
 	}
+}
+
+/* Button close. */
+.btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5rem 1rem;
+	z-index: 10;
+}
+
+.btn-close,
+.btn-close:visited {
+	border-color: transparent;
+	background: transparent;
+	color: var(--color-white);
+}
+
+.btn-close:hover,
+.btn-close:focus,
+.btn-close:active,
+.btn-close.is_active {
+	border-color: transparent;
+	background: transparent;
+	color: var(--color-light);
+	opacity: 0.75;
 }

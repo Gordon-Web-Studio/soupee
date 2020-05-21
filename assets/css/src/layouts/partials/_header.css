@@ -9,7 +9,7 @@
 	height: var(--header-height-mobile);
 	color: var(--color-white);
 	background-color: var(--color-secondary-dark);
-	z-index: 1;
+	z-index: 20;
 
 	@media (--sm) {
 		height: var(--header-height);

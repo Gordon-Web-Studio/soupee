@@ -66,8 +66,9 @@ img.align-right {
 
 /* Text, Background and Border utility colors. */
 /* stylelint-disable */
-@each $color in primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, news, success, info,
-warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis {
+@each $color in primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, 
+news, news-dark, success, success-dark, info, info-dark, warning, warning-dark, error, error-dark, 
+white, black, light, dark, gray, gray-light, gray-dark, emphasis {
 .text-$(color) {
 	color: var(--color-$(color)) !important;
 }
@@ -220,6 +221,11 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis
 /* Text shadow */
 .text-shadow {
 	text-shadow: 0 2px 4px rgba(var(--color-black), 0.5);
+}
+
+/* Text hidding */
+.text-less {
+	font: 0/0 a;
 }
 
 /* Text spacing. */

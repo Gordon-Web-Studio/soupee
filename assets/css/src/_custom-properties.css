@@ -173,8 +173,8 @@
 	--spacer-6: calc(var(--spacer) * 3);
 
 	/* Font icons */
-	--font-awesome-free: "Font Awesome 5 Free";
-	--font-awesome-brand: "Font Awesome 5 Brand";
+	--font-awesome-free: 'Font Awesome 5 Free';
+	--font-awesome-brands: 'Font Awesome 5 Brands';
 	--font-icon: var(--font-awesome-free);
 
 	/* Icons */

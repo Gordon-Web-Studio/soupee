@@ -124,7 +124,7 @@ h6 small,
 	margin-top: 0.15rem;
 	font-weight: 400;
 	line-height: 1;
-	color: var(--color-orange);
+	color: var(--color-emphasis);
 }
 
 /* special headings for mastheads and banners. */

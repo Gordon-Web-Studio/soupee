@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -11,13 +10,21 @@
 .media-content {
 	display: table-cell;
 	vertical-align: middle;
+}
 
-	@nest .media-top & {
-		vertical-align: top;
-	}
+.media-bottom {
 
-	@nest .media-bottom & {
+	& .media-image,
+	& .media-content {
 		vertical-align: bottom;
+	}
+}
+
+.media-top {
+
+	& .media-image,
+	& .media-content {
+		vertical-align: top;
 	}
 }
 
@@ -28,11 +35,11 @@
 		display: block;
 		max-width: none;
 	}
+}
 
-	@nest .media-rev & {
-		padding-right: 0;
-		padding-left: var(--spacer);
-	}
+.media-rev .media-image {
+	padding-right: 0;
+	padding-left: var(--spacer);
 }
 
 .media-content {

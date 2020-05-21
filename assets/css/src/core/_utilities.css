@@ -67,7 +67,7 @@ img.align-right {
 /* Text, Background and Border utility colors. */
 /* stylelint-disable */
 @each $color in primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, news, success, info,
-warning, error, white, black, light, dark, gray, gray-light, gray-dark {
+warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis {
 .text-$(color) {
 	color: var(--color-$(color));
 }

@@ -40,10 +40,13 @@
 	&.img-container-portrait {
 		@mixin aspect-ratio-portrait 3, 4;
 	}
+}
 
-	@media (--sm-max) {
-
-		&.sm-img-container-square {
+@each $size in sm, md, lg {
+@media (--$(size)) {
+	.ui-img-container {
+		
+		&.img-container-square-$(size) {
 			@mixin aspect-ratio-portrait 1, 1;
 
 			&.img-landscape > .inner-content > img {
@@ -59,57 +62,23 @@
 			}
 		}
 
-		&.sm-img-container-wide {
+		&.img-container-wide-$(size)-$(size) {
 			@mixin aspect-ratio-landscape 4, 3;
 		}
 
-		&.sm-img-container-softlandscape {
+		&.img-container-softlandscape-$(size) {
 			@mixin aspect-ratio-landscape 16, 9;
 		}
 
-		&.sm-img-container-landscape {
+		&.img-container-landscape-$(size) {
 			@mixin aspect-ratio-landscape 16, 9;
 		}
 
-		&.sm-img-container-portrait {
+		&.img-container-portrait-$(size) {
 			@mixin aspect-ratio-portrait 3, 4;
 		}
 	}
-
-	@media (--xs-max) {
-
-		&.xs-img-container-square {
-			@mixin aspect-ratio-portrait 1, 1;
-
-			&.img-landscape > .inner-content > img {
-				max-width: initial;
-				width: auto;
-				height: 100%;
-			}
-
-			&.img-portrait > .inner-content > img {
-				max-width: initial;
-				width: 100%;
-				height: auto;
-			}
-		}
-
-		&.xs-img-container-wide {
-			@mixin aspect-ratio-landscape 4, 3;
-		}
-
-		&.xs-img-container-softlandscape {
-			@mixin aspect-ratio-landscape 16, 9;
-		}
-
-		&.xs-img-container-landscape {
-			@mixin aspect-ratio-landscape 16, 9;
-		}
-
-		&.xs-img-container-portrait {
-			@mixin aspect-ratio-portrait 3, 4;
-		}
-	}
+}
 }
 
 .img-rounded {

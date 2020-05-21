@@ -32,7 +32,6 @@
 
 .card-header,
 .card-footer {
-	display: flex;
 	padding: 0.75rem var(--spacer);
 	margin-bottom: 0;
 }

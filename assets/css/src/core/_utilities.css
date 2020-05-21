@@ -134,23 +134,12 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis
 }
 
 /* Opacity. */
-.opacity-0 {
-	opacity: 0;
+@each $value in 0, 25, 50, 75, 100 {
+.opacity-$(value) {
+	opacity: calc($value / 100);
+}
 }
 
-.opacity-25 {
-	opacity: 0.25;
-}
-
-.opacity-50 {
-	opacity: 0.5;
-}
-
-.opacity-75 {
-	opacity: 0.75;
-}
-
-.opacity-100,
 .opacity-1 {
 	opacity: 1;
 }
@@ -617,7 +606,7 @@ warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis
 * for TOP, BOTTOM, LEFT, RIGHT, TOPBOTTOM or LEFTRIGHT */
 /* stylelint-disable */
 @each $key, $size in (0, 1, 2, 3, 4, 5, 6),
-(0, 1rem, 1.5rem, 2rem, 3rem, 4.5rem, 6rem) {
+(0, 0.5rem, 1rem, 1.5rem, 2.5rem, 4.5rem, 6rem) {
 .m-$(key) {
 	margin: $(size) !important;
 }

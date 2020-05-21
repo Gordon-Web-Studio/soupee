@@ -40,7 +40,6 @@ export const bundleTheme = series(
     prodPrep, parallel( series(html, docs), scripts, styles, images), prodCompress
 );
 
-
 /**
  * Export all imported functions as tasks
  */

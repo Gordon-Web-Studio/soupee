@@ -10,7 +10,7 @@
 	& th {
 		border-top: 0;
 		border-bottom: 2px solid var(--color-gray-light);
-		background-color: #e8eaed;
+		background-color: var(--color-gray-300);
 		color: var(--color-gray-dark);
 		text-align: left;
 		font-size: 11px;
@@ -25,11 +25,9 @@
 		vertical-align: top;
 	}
 
-	& tbody tr {
-		&:hover {
-			background: var(--color-primary);
-			color: var(--color-primary-light);
-		}
+	& tbody tr:hover {
+		background: rgba(var(--color-primary-rgb), 0.20) !important;
+		color: var(--color-secondary);
 	}
 
 	& td {
@@ -38,7 +36,7 @@
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-	background-color: rgba(var(--color-gray), 0.075);
+	background-color: rgba(var(--color-gray-500-rgb), 0.1);
 }
 
 .table-bordered {
@@ -70,5 +68,39 @@
 
 	& > *:last-child {
 		margin: 0;
+	}
+}
+
+/* .is-inverted support */
+.ui-table.is-inverted,
+.is-inverted .ui-table:not(.keep-default) {
+	border-color: var(--color-secondary);
+
+	& th {
+		border-bottom: 2px solid var(--color-secondary);
+		background-color: var(--color-secondary);
+		color: var(--color-white);
+	}
+
+	& tbody tr:hover {
+		background: rgba(var(--color-secondary-light-rgb), 0.2) !important;
+		color: var(--color-white);
+	}
+
+	& td {
+		border-top: 1px solid var(--color-secondary);
+	}
+
+	&.table-striped > tbody > tr:nth-of-type(odd) {
+		background-color: rgba(var(--color-secondary-light-rgb), 0.1);
+	}
+
+	&.table-bordered {
+		border: 1px solid var(--color-secondary);
+
+		& th,
+		& td {
+			border: 1px solid var(--color-secondary);
+		}
 	}
 }

@@ -358,8 +358,8 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 	}
 
 	& .shape-divider {
-		fill: var(--global-background-color);
-		stop-color: var(--global-background-color);
+		fill: var(--global-bg-color);
+		stop-color: var(--global-bg-color);
 	}
 }
 

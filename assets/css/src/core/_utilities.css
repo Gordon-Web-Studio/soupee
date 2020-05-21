@@ -69,15 +69,15 @@ img.align-right {
 @each $color in primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, news, success, info,
 warning, error, white, black, light, dark, gray, gray-light, gray-dark, emphasis {
 .text-$(color) {
-	color: var(--color-$(color));
+	color: var(--color-$(color)) !important;
 }
 
 .bg-$(color) {
-	background-color: var(--color-$(color));
+	background-color: var(--color-$(color)) !important;
 }
 
 .border-$(color) {
-	border-color: var(--color-$(color));
+	border-color: var(--color-$(color)) !important;
 }
 }
 /* stylelint-enable */

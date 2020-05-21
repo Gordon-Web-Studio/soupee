@@ -13,12 +13,13 @@
 	background-clip: padding-box;
 	color: var(--global-font-color);
 	overflow: hidden;
+}
 
-	&.is-inverted {
-		border: 1px solid var(--color-secondary-dark);
-		background-color: var(--color-secondary-dark);
-		color: var(--color-white);
-	}
+.is-inverted .ui-card:not(.keep-default),
+.ui-card.is-inverted {
+	border: 1px solid var(--color-secondary-dark);
+	background-color: var(--color-secondary-dark);
+	color: var(--color-white);
 }
 
 .card-body {
@@ -61,7 +62,7 @@
 	padding: 0.5rem 1rem;
 	z-index: 10;
 
-	&::before {
+	&:before {
 		font-family: var(--font-awesome-free);
 		font-weight: 900;
 		content: "\f00d";

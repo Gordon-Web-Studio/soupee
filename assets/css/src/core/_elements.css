@@ -29,7 +29,7 @@ body {
 /* stylelint-disable */
 body {
 	color: var(--global-font-color);
-	background: var(--global-background-color);
+	background: var(--global-bg-color);
 	font-family: var(--global-font-family);
 	font-size: var(--fs-regular);
 	line-height: var(--global-font-line-height);
@@ -42,7 +42,7 @@ body {
 .site .is-inverted,
 body.is-inverted {
 	color: var(--global-font-color-inverted);
-	background: var(--global-background-color-inverted);
+	background: var(--global-bg-color-inverted);
 
 	& .divider {
 		background-color: var(--color-gray-dark);

@@ -7,21 +7,32 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	border: 1px solid var(--color-gray-light);
+	border: 1px solid var(--color-light);
 	border-radius: var(--rounded-radius);
 	background-color: var(--color-white);
 	background-clip: padding-box;
 	color: var(--global-font-color);
 	overflow: hidden;
+
+	&.is-inverted {
+		border: 1px solid var(--color-secondary-dark);
+		background-color: var(--color-secondary-dark);
+		color: var(--color-white);
+	}
 }
 
 .card-body {
 	flex: 1 1 auto; /* flex: <"flex-grow"> <"flex-shrink"> <"flex-basis">; */
-	padding: calc(var(--spacer) * 2);
+	padding: var(--spacer);
+
+	& > p {
+		margin-top: 0;
+	}
 }
 
 .card-header,
 .card-footer {
+	display: flex;
 	padding: 0.75rem var(--spacer);
 	margin-bottom: 0;
 }

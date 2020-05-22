@@ -58,3 +58,30 @@
 	height: 100px;
 	background-color: var(--color-gray-light);
 }
+
+.anchor {
+	position: relative;
+	padding-left: ;
+
+	& .anchor-offset {
+		position: absolute;
+		top: 50%;
+		left: calc(var(--spacer-5) * -1);
+		font-family: var(--global-font-family);
+		padding-top: calc(var(--header-height) + var(--spacer));
+		padding-bottom: calc(var(--header-height) + var(--spacer));
+		color: var(--color-blue);
+		outline: 0;
+		transform: translateY(-50%);
+	
+		&:visited {
+			color: var(--color-blue);
+		}
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--color-blue-dark);
+		}
+	}
+}

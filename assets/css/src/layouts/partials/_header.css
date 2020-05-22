@@ -7,8 +7,8 @@
 	position: sticky;
 	width: 100%;
 	height: var(--header-height-mobile);
-	color: var(--color-white);
-	background-color: var(--color-secondary-dark);
+	color: var(--global-font-color);
+	background-color: var(--color-gray-light);
 	z-index: 20;
 
 	@media (--sm) {

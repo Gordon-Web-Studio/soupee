@@ -11,6 +11,9 @@
 # Accessibility
 --------------------------------------------------------------*/
 
+/* Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Russo+One&display=swap');
+
 /* Settings. */
 @import "_custom-properties.css";
 

@@ -26,6 +26,14 @@ body {
 	box-sizing: inherit;
 }
 
+/* Customize Scrollbar */
+@media (--md) {
+	*::-webkit-scrollbar { width: 10px; height: 10px; }
+	*::-webkit-scrollbar-track { background: var(--color-secondary-dark); }
+	*::-webkit-scrollbar-thumb { background: var(--color-secondary); }
+	*::-webkit-scrollbar-thumb:hover { background: var(--color-secondary-light); }
+}
+
 /* stylelint-disable */
 body {
 	color: var(--global-font-color);
@@ -43,6 +51,14 @@ body {
 body.is-inverted {
 	color: var(--global-font-color-inverted);
 	background: var(--global-bg-color-inverted);
+}
+
+body.is-inverted {
+	
+	& .site-header { 
+		color: var(--color-white);
+		background-color: var(--color-secondary-dark);
+	}
 
 	& .divider {
 		background-color: var(--color-gray-dark);

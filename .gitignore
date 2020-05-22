@@ -27,6 +27,7 @@
 /config/config.local.json
 !/tests/
 !/optional/
+!/soupee-theme/
 
 !.babelrc
 !CHANGELOG.md

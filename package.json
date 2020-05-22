@@ -2,17 +2,8 @@
   "name": "soupee",
   "version": "0.0.1",
   "description": "Frontend Framework with Modern CSS",
-  "author": "Gordon Web Studio",
-  "license": "MIT",
-  "main": "index.html",
+  "main": "soupee-theme/assets/css/soupee.min.css",
   "homepage": "https://gordon-web-studio.github.io/soupee/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gordon-Web-Studio/soupee"
-  },
-  "bugs": {
-    "url": "https://github.com/Gordon-Web-Studio/soupee/issues"
-  },
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
@@ -122,5 +113,22 @@
     "lint": "eslint assets/js/src/",
     "lint:gulp": "eslint gulp/",
     "lint:gulp:fix": "eslint --fix gulp/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gordon-Web-Studio/soupee.git"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "mobile-first",
+    "responsive",
+    "frontend",
+    "framework"
+  ],
+  "author": "Gordon Web Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gordon-Web-Studio/soupee/issues"
   }
 }

@@ -243,16 +243,107 @@
                         <!-- CONTENT -->
                         <main class="px-2">
                              <h1>Introduction</h1>
-                        </main>
-                        <!-- /CONTENT -->
+                            <p class="fs5">Soupee is focused in performance, best practices, use of code standards,
+                                fast web development process, and the creation of high customization websites.</p>
+                            <p>This guide will help you through the process of setting up your custom
+                                projects, and how you can extend Soupee with your custom layouts.</p>
+                            <h2
+                            class="anchor h5 text-emphasis"> <a class="anchor-offset" id="requirements" href="#requirements">#</a> Requirements</h2>
+                                <p>For Soupee to work correctly, you need to make your webpage responsive.</p>
+                                <div
+                                class="ui-media media-top">
+                                    <div class="media-image h5">1.</div>
+                                    <div class="media-content"> <span class="h5 mt-4">Use the HTML5 doctype</span> <pre><code class="language-markup"><script type="prism-html-markup">
+
+            <!doctype html>
+
+            <html lang="en">
+
+              ...
+
+            </html>
+
+          </script></code></pre>
+                                    </div>
                     </div>
-                </div>
-                <footer class="site-footer py-2" id="colophon">
-                    <div class="site-info">
-                        <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Soupee - All Right Reserved</small>
+                    <div class="ui-media media-top">
+                        <div class="media-image h5">2.</div>
+                        <div class="media-content"> <span class="h5 mt-4">Add a responsive viewport meta tag</span> <pre><code class="language-markup"><script type="prism-html-markup">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+          </script></code></pre>
                         </div>
                     </div>
-                </footer>
+                     <h2 class="anchor h5 text-emphasis">
+
+        <a class="anchor-offset" id="starter-template" href="#starter-template">#</a> Starter template
+
+      </h2>
+                    <p>If you want to get started right away, you can use this HTML starter template.
+                        Just copy/paste this code in a file and save it on your computer.</p> <pre><code class="language-markup"><script type="prism-html-markup">
+
+          <!DOCTYPE html>
+
+          <html lang="en">
+
+            <head>
+
+              <meta charset="UTF-8" />
+
+              <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+              <title>Soupee Starter Theme</title>
+
+              <!-- Soupee CSS Framework -->
+
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/soupee@0.0.1/soupee-theme/assets/css/soupee.min.css">
+
+              <!-- Site layout. Change with your own layout css -->
+
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/soupee@0.0.1/soupee-theme/assets/css/layouts/layout-main.min.css">
+
+            </head>
+
+            <body class="soupee-theme page homepage">
+
+              <div class="l-block full-height">
+
+                <div class="inner-container text-center">
+
+                  <img class="w-200 w-360-md my-4 inline-block" src="https://gordon-web-studio.github.io/soupee/assets/images/soupee-logo.svg" alt="Soupee Logo">
+
+                  <h1 class="my-2">Soupee Frontend Framework <small>+ Build Toolkit</small></h1>
+
+                  <p class="fs5">Performance focused, scalable and modular frontend framework for faster
+
+                      web development. It feature Modern CSS through PostCSS, ES6 Javascript
+
+                      and a build process toolkit.</p>
+
+                </div>
+
+              </div>
+
+              <!-- Soupee JS Components -->
+
+              <script src="https://cdn.jsdelivr.net/npm/soupee@0.0.1/soupee-theme/assets/js/global.min.js"></script>
+
+            &lt;/body>
+
+          &lt;/html>
+
+        </script></code></pre>
+                    </main>
+                    <!-- /CONTENT -->
+                </div>
+        </div>
+        <footer class="site-footer py-2" id="colophon">
+            <div class="site-info">
+                <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Soupee - All Right Reserved</small>
+                </div>
+            </div>
+        </footer>
         </div>
         <!-- #page -->
         <!-- Prismjs Syntax highlighter -->
@@ -261,6 +352,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-language/prism-show-language.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/command-line/prism-command-line.min.js"></script>
         <script>
             // Highlight all matching syntax
             Prism.highlightAll();

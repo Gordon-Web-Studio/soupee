@@ -7,7 +7,7 @@
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="icon" href="../assets/images/icon.png" />
-        <title>Alerts | Soupee</title>
+        <title>Downloads | Soupee</title>
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Russo+One&display=swap"
         rel="stylesheet">
@@ -241,158 +241,49 @@
                 <div class="site-main l-block pt-2">
                     <div class="fluid-container">
                         <!-- CONTENT -->
-                        <main>
-                             <h1>Alerts</h1>
-                            <div class="flex-grid">
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">News alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <p>Alerts are built using <code>.ui-card</code> module but adding a <code>.card-alert</code> class
-                                            modifier in combination of some utilities classes <code>.bg-*</code> and <code>.text-*</code> for
-                                            customization.</p>
-                                        <div class="ui-card card-alert bg-secondary-dark text-news mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>NEWS: New Coded Bonus available.</p>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card card-alert bg-news text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>NEWS: New Coded Bonus available.</p>
-                                            </div>
-                                        </div> <pre><code class="language-markup"><script type="prism-html-markup">
+                        <main class="px-2">
+                             <h1>Downloads</h1>
+                            <p class="fs5">Quick start guide for downloading, installing and configuring Soupee.</p>
+                            <p>There are three ways to download and start using Soupee:</p>
+                             <h2 class="anchor h5 text-emphasis">
 
-              <div class="ui-card card-alert bg-secondary-dark text-news">
+        <a class="anchor-offset" id="using-cdn" href="#using-cdn">#</a> 1. Using jsDelivr CDN
 
-                <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span></button>
+      </h2>
+                             <h5>CSS Files</h5> <pre><code class="language-markup"><script type="prism-html-markup">
 
-                <div class="card-body">
+        <!-- Soupee CSS Framework -->
 
-                  <p>NEWS: New Coded Bonus available.</p>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/soupee@0.0.1/soupee-theme/assets/css/soupee.min.css" />
 
-                </div>
+      </script></code></pre>
+                             <h5>JS Files</h5> <pre><code class="language-markup"><script type="prism-html-markup">
 
-              </div>
+        <!-- Soupee JS Components -->
 
-            </script></code></pre>
-                                        <p>Use <code>data-card-close</code> attribute on any element to trigger the
-                                            remove action of the alert.</p> <pre><code class="language-markup"><script type="prism-html-markup">
+        <script src="https://cdn.jsdelivr.net/npm/soupee@0.0.1/soupee-theme/assets/js/global.min.js"></script>
 
-              <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span></button>
+      </script></code></pre>
+                             <h2 class="anchor h5 text-emphasis">
 
-            </script></code></pre>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">Info alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <div class="ui-card card-alert bg-secondary-dark text-info mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>INFO: You have 10 notifications messages.</p>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card card-alert bg-info text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>INFO: You have 10 notifications messages.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">Success alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <div class="ui-card card-alert bg-secondary-dark text-success mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>SUCCESS: New User has been registered successfully.</p>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card card-alert bg-success text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>SUCCESS: New User has been registered successfully.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">Warning alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <div class="ui-card card-alert bg-secondary-dark text-warning mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>WARNING: Your balance is very low.</p>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card card-alert bg-warning text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>WARNING: Your balance is very low.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">Error alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <div class="ui-card card-alert bg-secondary-dark text-error mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>ERROR: Your username and password don't match.</p>
-                                            </div>
-                                        </div>
-                                        <div class="ui-card card-alert bg-error text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>ERROR: Your username and password don't match.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                     <h2 class="h5 col one-quarters-md text-emphasis">Auto Fadeout Alerts</h2>
-                                    <div class="col three-quarters-md">
-                                        <p>Using <code>.fadeout</code> class in an alert card will trigger auto fadeout
-                                            effect.
-                                            <br> <a href="" onClick="window.location.reload()">Refresh</a> this page to
-                                            see this effect again.</p>
-                                        <div class="ui-card card-alert fadeout bg-news text-white mb-2">
-                                            <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span>
-                                            </button>
-                                            <div class="card-body">
-                                                <p>FADEOUT: This message will fadeout after 3 seconds.</p>
-                                            </div>
-                                        </div> <pre><code class="language-markup"><script type="prism-html-markup">
+        <a class="anchor-offset" id="downloading-repo" href="#downloading-repo">#</a> 2. Downloading from repo.
 
-              <div class="ui-card card-alert fadeout bg-news text-white">
+      </h2>
+                             <h2 class="h5 text-emphasis mt-4"></h2>
+                            <p>Download compile code and source files from Soupee repository.</p> <a class="ui-btn btn-primary"
+                            href="https://github.com/Gordon-Web-Studio/soupee/archive/master.zip" target="_blank"
+                            role="button">Download</a>
+                             <h2 class="anchor h5 text-emphasis">
 
-                <button class="ui-btn btn-close" data-card-close><i class="fas fa-times" aria-hidden="true"></i><span class="text-less">close</span></button>
+        <a class="anchor-offset" id="install-npm" href="#install-npm">#</a> 3. Install Soupee via NPM
 
-                <div class="card-body">
+      </h2>
+                            <p>Recommended for most projects focused on customization.</p> <pre class="command-line language-bash"
+                            data-user="user"><code>
 
-                  <p>FADEOUT: This message will fadeout after 3 seconds.</p>
+        npm install soupee
 
-                </div>
-
-              </div>
-
-            </script></code></pre>
-                                    </div>
-                                </div>
-                            </div>
+      </code></pre>
                         </main>
                         <!-- /CONTENT -->
                     </div>

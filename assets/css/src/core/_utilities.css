@@ -784,6 +784,24 @@ white, black, light, dark, gray, gray-light, gray-dark, emphasis {
 	height: 50vh;
 }
 
+/* Height sizes in percentages. */
+@each $height in 0, 25, 50, 75, 100 {
+.w-$(height)p {
+	height: $(height)%;
+}
+}
+
+/* Height sizes in percentages responsive. */
+@each $size in sm, md, lg {
+	@media (--$(size)) {
+		@each $height in 0, 25, 50, 75, 100 {
+		.w-$(height)p-$(size) {
+			height: $(height)%;
+		}
+		}
+	}
+}
+
 /* Icons Sizes. */
 @each $value in 24, 32, 64, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300 {
 .icon-$(value) {

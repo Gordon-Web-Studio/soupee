@@ -52,68 +52,85 @@
 
 	.col {
 		float: left;
-		width: 100%;
+		flex-basis: 0;
+		flex-grow: 1;
+		flex-shrink: 1;
 	}
 }
 
 /* Grid columns. */
 .full {
+	flex: none;
 	width: 100%;
 }
 
 .half {
+	flex: none;
 	width: 50%;
 }
 
 .one-thirds {
+	flex: none;
 	width: 33.33%;
 }
 
 .two-thirds {
+	flex: none;
 	width: 66.66%;
 }
 
 .one-quarters {
+	flex: none;
 	width: 25%;
 }
 
 .two-quarters {
+	flex: none;
 	width: 50%;
 }
 
 .three-quarters {
+	flex: none;
 	width: 75%;
 }
 
 .one-fifths {
+	flex: none;
 	width: 20%;
 }
 
 .two-fifths {
+	flex: none;
 	width: 40%;
 }
 
 .three-fifths {
+	flex: none;
 	width: 60%;
 }
 
 .four-fifths {
+	flex: none;
 	width: 80%;
 }
 
 .seven-twelfths {
+	flex: none;
 	width: 58.33%;
 }
 
 .five-twelfths {
+	flex: none;
 	width: 41.66%;
 }
 
 .one-tenths {
+	flex: none;
 	width: 10%;
 }
 
 .nine-tenths {
+	flex: none;
 	width: 90%;
 }
 
@@ -121,62 +138,77 @@
 @each $size in sm, md, lg, xl {
 @media (--$(size)) {
 	.full-$(size) {
+		flex: none;
 		width: 100%;
 	}
 	
 	.half-$(size) {
+		flex: none;
 		width: 50%;
 	}
 	
 	.one-thirds-$(size) {
+		flex: none;
 		width: 33.33%;
 	}
 	
 	.two-thirds-$(size) {
+		flex: none;
 		width: 66.66%;
 	}
 	
 	.one-quarters-$(size) {
+		flex: none;
 		width: 25%;
 	}
 	
 	.two-quarters-$(size) {
+		flex: none;
 		width: 50%;
 	}
 	
 	.three-quarters-$(size) {
+		flex: none;
 		width: 75%;
 	}
 	
 	.one-fifths-$(size) {
+		flex: none;
 		width: 20%;
 	}
 	
 	.two-fifths-$(size) {
+		flex: none;
 		width: 40%;
 	}
 	
 	.three-fifths-$(size) {
+		flex: none;
 		width: 60%;
 	}
 	
 	.four-fifths-$(size) {
+		flex: none;
 		width: 80%;
 	}
 	
 	.seven-twelfths-$(size) {
+		flex: none;
 		width: 58.33%;
 	}
 	
 	.five-twelfths-$(size) {
+		flex: none;
 		width: 41.66%;
 	}
 	
 	.one-tenths-$(size) {
+		flex: none;
 		width: 10%;
 	}
 
 	.nine-tenths-$(size) {
+		flex: none;
 		width: 90%;
 	}
 }

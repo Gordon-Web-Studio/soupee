@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Build Toolkit | Soupee</title>
-        <meta property="og:title" content="Soupee | Build Toolkit"
+        <title>Grid Columns | Soupee</title>
+        <meta property="og:title" content="Soupee | Grid Columns"
         />
         <meta name="description" content="Soupee is a performance focused, scalable and modular front-end framework for faster web development">
         <meta property="og:url" content="https://gordon-web-studio.github.io/soupee/"
@@ -263,10 +263,227 @@
                 <div class="site-main l-block pt-2">
                     <div class="fluid-container">
                         <!-- CONTENT -->
-                        <main class="px-2">
-                             <h1>Build Toolkit</h1>
-                            <p>Soupee packaged Gulp4 build tools so your project can preserve its own
-                                theme changes.</p>
+                        <main>
+                             <h1>Grid Columns</h1>
+                            <p class="fs5">Soupee is build with flexbox to manage grids and columns.</p>
+                             <h2 class="anchor h5 text-emphasis mt-4">
+
+        <a class="anchor-offset" id="basic-grid" href="#basic-grid">#</a> Basic grid
+
+      </h2>
+                            <p>To setup a grid of items seperated in columns Soupee uses:</p>
+                            <ol>
+                                <li>a <code>.flex-grid</code> wrapper container.</li>
+                                <li>a <code>.row</code> container.</li>
+                                <li>Use many <code>.col</code> as columns required.</li>
+                                <li>A set of column size modifiers.</li>
+                            </ol>
+                            <div class="flex-grid bg-secondary-dark text-center p-3">
+                                <p class="col full text-primary">.flex-grid</p>
+                                <div class="row my-3 bg-secondary p-3">
+                                    <p class="col full">.row</p>
+                                    <div class="col">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3">.col</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3">.col</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3">.col</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3">.col</p>
+                                    </div>
+                                </div>
+                            </div> <pre><code class="language-markup"><script type="prism-html-markup">
+
+        <div class="flex-grid">
+
+          <div class="row">
+
+            <div class="col"></div>
+
+            <div class="col"></div>
+
+            <div class="col"></div>
+
+            <div class="col"></div>
+
+          </div>
+
+        </div>
+
+      </script></code></pre>
+                             <h2 class="anchor h5 text-emphasis mt-4">
+
+        <a class="anchor-offset" id="column-sizes" href="#column-sizes">#</a> Column Sizes
+
+      </h2>
+                            <div class="flex-grid text-center">
+                                <div class="row my-3">
+                                    <div class="col half">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.half</p>
+                                    </div>
+                                    <div class="col half">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.half</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col one-thirds">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.one-thirds</p>
+                                    </div>
+                                    <div class="col two-thirds">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.two-thirds</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col one-quarters">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.one-quarters</p>
+                                    </div>
+                                    <div class="col three-quarters">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.three-quarters</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col one-fifths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.one-fifths</p>
+                                    </div>
+                                    <div class="col four-fifths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.four-fifths</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col five-twelfths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.five-twelfths</p>
+                                    </div>
+                                    <div class="col seven-twelfths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.seven-twelfths</p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col one-tenths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.one-tenths</p>
+                                    </div>
+                                    <div class="col nine-tenths">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p">.nine-tenths</p>
+                                    </div>
+                                </div>
+                            </div> <pre><code class="language-markup"><script type="prism-html-markup">
+
+        <div class="flex-grid">
+
+          <div class="row">
+
+            <div class="col half"></div>
+
+            <div class="col half"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col one-thirds"></div>
+
+            <div class="col two-thirds"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col one-quarters"></div>
+
+            <div class="col three-quarters"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col one-fifths"></div>
+
+            <div class="col four-fifths"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col five-twelfths"></div>
+
+            <div class="col seven-twelfths"></div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col one-tenths"></div>
+
+            <div class="col nine-tenths"></div>
+
+          </div>
+
+        </div>
+
+      </script></code></pre> 
+                             <h2 class="anchor h5 text-emphasis mt-4">
+
+        <a class="anchor-offset" id="column-sizes" href="#column-sizes">#</a> Column Sizes Responsive
+
+      </h2>
+                            <p>Use <code>-sm</code>, <code>-md</code>, <code>-lg</code> or <code>-xl</code> suffix
+                                for responsive breakpoints.</p>
+                            <div class="flex-grid text-center">
+                                <div class="row my-3">
+                                    <div class="col full one-thirds-sm one-fifths-md mb-2">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p"> <span class="hide-sm">.full</span> <span class="hide-sm-max inline-sm hide-md">.one-thirds-sm</span> 
+                                            <span
+                                            class="hide-md-max inline-md">.one-fifths-md</span>
+                                        </p>
+                                    </div>
+                                    <div class="col half two-thirds-sm one-fifths-md mb-2">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p"> <span class="hide-sm">.half</span>  <span class="hide-sm-max inline-sm hide-md">.two-thirds-sm</span> 
+                                            <span
+                                            class="hide-md-max inline-md">.one-fifths-md</span>
+                                        </p>
+                                    </div>
+                                    <div class="col half two-thirds-sm one-fifths-md mb-2">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p"> <span class="hide-sm">.half</span>  <span class="hide-sm-max inline-sm hide-md">.two-thirds-sm</span> 
+                                            <span
+                                            class="hide-md-max inline-md">.one-fifths-md</span>
+                                        </p>
+                                    </div>
+                                    <div class="col half one-thirds-sm one-fifths-md mb-2">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p"> <span class="hide-sm">.half</span>  <span class="hide-sm-max inline-sm hide-md">.one-thirds-sm</span> 
+                                            <span
+                                            class="hide-md-max inline-md">.one-fifths-md</span>
+                                        </p>
+                                    </div>
+                                    <div class="col half full-sm one-fifths-md mb-2">
+                                        <p class="bg-primary text-secondary rounded-radius m-0 py-3 w-100p"> <span class="hide-sm">.half</span>  <span class="hide-sm-max inline-sm hide-md">.full-sm</span> 
+                                            <span
+                                            class="hide-md-max inline-md">.one-fifths-md</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <pre><code class="language-markup"><script type="prism-html-markup">
+
+        <div class="flex-grid">
+
+          <div class="row">
+
+            <div class="col full one-thirds-sm one-fifths-md"></div>
+
+            <div class="col half two-thirds-sm one-fifths-md"></div>
+
+            <div class="col half two-thirds-sm one-fifths-md"></div>
+
+            <div class="col half one-thirds-sm one-fifths-md"></div>
+
+            <div class="col half full-sm one-fifths-md"></div>
+
+          </div>
+
+        </div>
+
+      </script></code></pre> 
                         </main>
                         <!-- /CONTENT -->
                     </div>

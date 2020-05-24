@@ -127,27 +127,21 @@
 
                         </li>
                     </ul>
-                     <h3 class="h6">Grid Columns</h3>
-                    <ul class="list fs7">
-                        <li><a href="grid-basics.html">Basics</a>
-
-                        </li>
-                        <li><a href="grid-column-sizes.html">Column Sizes</a>
-
-                        </li>
-                        <li><a href="grid-nesting.html">Nesting</a>
-
-                        </li>
-                    </ul>
                      <h3 class="h6">Layouts</h3>
                     <ul class="list fs7">
-                        <li><a href="layout-main-layout.html">Main Layout</a>
+                        <li><a href="layout-overview.html">Overview</a>
 
                         </li>
-                        <li><a href="layout-blocks.html">Blocks</a>
+                        <li><a href="layout-page-template.html">Page Template</a>
 
                         </li>
-                        <li><a href="layout-Sidebar">Sidebar</a>
+                        <li><a href="layout-blocks-templates.html">Blocks Templates</a>
+
+                        </li>
+                        <li><a href="layout-containers.html">Containers</a>
+
+                        </li>
+                        <li><a href="layout-grid-columns.html">Grid and Columns</a>
 
                         </li>
                         <li><a href="layout-nesting.html">Nesting</a>
@@ -205,24 +199,6 @@
 
                         </li>
                     </ul>
-                     <h3 class="h6">Components</h3>
-                    <ul class="list fs7">
-                        <li><a href="component-dropdowns.html">Dropdowns</a>
-
-                        </li>
-                        <li><a href="component-collapse.html">Collapse</a>
-
-                        </li>
-                        <li><a href="component-modals.html">Modals</a>
-
-                        </li>
-                        <li><a href="component-paginations.html">Paginations</a>
-
-                        </li>
-                        <li><a href="component-tooltips.html">Tooltips</a>
-
-                        </li>
-                    </ul>
                      <h3 class="h6">Utilities Classes</h3>
                     <ul class="list fs7">
                         <li><a href="util-borders.html">Borders</a>
@@ -265,6 +241,24 @@
 
                         </li>
                     </ul>
+                     <h3 class="h6">Components</h3>
+                    <ul class="list fs7">
+                        <li><a href="component-dropdowns.html">Dropdowns</a>
+
+                        </li>
+                        <li><a href="component-collapse.html">Collapse</a>
+
+                        </li>
+                        <li><a href="component-modals.html">Modals</a>
+
+                        </li>
+                        <li><a href="component-paginations.html">Paginations</a>
+
+                        </li>
+                        <li><a href="component-tooltips.html">Tooltips</a>
+
+                        </li>
+                    </ul>
                 </aside>
                 <div class="site-main l-block pt-2">
                     <div class="fluid-container">
@@ -276,40 +270,32 @@
                             <p>This guide will help you through the process of setting up your custom
                                 projects, and how you can extend Soupee with your custom layouts.</p>
                             <h2
-                            class="anchor h5 text-emphasis"> <a class="anchor-offset" id="requirements" href="#requirements">#</a> Requirements</h2>
+                            class="anchor h5 text-emphasis mt-4"> <a class="anchor-offset" id="requirements" href="#requirements">#</a> Requirements</h2>
                                 <p>For Soupee to work correctly, you need to make your webpage responsive.</p>
-                                <div
-                                class="ui-media media-top">
-                                    <div class="media-image h5">1.</div>
-                                    <div class="media-content"> <span class="h5 mt-4">Use the HTML5 doctype</span> <pre><code class="language-markup"><script type="prism-html-markup">
+                                <h3
+                                class="h5 mt-4">1. Use the HTML5 doctype</h3> <pre><code class="language-markup"><script type="prism-html-markup">
 
-            <!doctype html>
+        <!doctype html>
 
-            <html lang="en">
+        <html lang="en">
 
-              ...
+          ...
 
-            </html>
+        </html>
 
-          </script></code></pre>
-                                    </div>
-                    </div>
-                    <div class="ui-media media-top">
-                        <div class="media-image h5">2.</div>
-                        <div class="media-content"> <span class="h5 mt-4">Add a responsive viewport meta tag</span> <pre><code class="language-markup"><script type="prism-html-markup">
+      </script></code></pre>
+                                     <h3 class="h5 mt-4">2. Add a responsive viewport meta tag</h3> <pre><code class="language-markup"><script type="prism-html-markup">
 
-            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-          </script></code></pre>
-                        </div>
-                    </div>
-                     <h2 class="anchor h5 text-emphasis">
+      </script></code></pre>
+                                     <h2 class="anchor h5 text-emphasis mt-4">
 
         <a class="anchor-offset" id="starter-template" href="#starter-template">#</a> Starter template
 
       </h2>
-                    <p>If you want to get started right away, you can use this HTML starter template.
-                        Just copy/paste this code in a file and save it on your computer.</p> <pre><code class="language-markup"><script type="prism-html-markup">
+                                    <p>If you want to get started right away, you can use this HTML starter template.
+                                        Just copy/paste this code in a file and save it on your computer.</p> <pre><code class="language-markup"><script type="prism-html-markup">
 
           <!DOCTYPE html>
 
@@ -362,16 +348,16 @@
           &lt;/html>
 
         </script></code></pre>
-                    </main>
-                    <!-- /CONTENT -->
+                        </main>
+                        <!-- /CONTENT -->
+                    </div>
                 </div>
-        </div>
-        <footer class="site-footer py-2" id="colophon">
-            <div class="site-info">
-                <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Soupee - All Right Reserved</small>
-                </div>
-            </div>
-        </footer>
+                <footer class="site-footer py-2" id="colophon">
+                    <div class="site-info">
+                        <div class="copyright position-relative"> <small class="mb-0">Copyright &copy; 2020 Soupee - All Right Reserved</small>
+                        </div>
+                    </div>
+                </footer>
         </div>
         <!-- #page -->
         <!-- Prismjs Syntax highlighter -->
